@@ -141,6 +141,20 @@ main{max-width:1180px;margin:0 auto;padding:0 24px 80px;}
 .p-meta{
   margin-top:5px;font-size:12.5px;color:var(--steel);
 }
+.p-pack{
+  margin-top:6px;display:inline-block;
+  font-family:'Roboto Mono',monospace;font-size:11.5px;font-weight:500;
+  background:var(--paper-deep);border:1px solid var(--line);
+  color:var(--charcoal-soft);padding:3px 9px;border-radius:7px;
+}
+.p-pack b{color:var(--orange-deep);font-weight:600;}
+.cart-meta{
+  font-size:12px;color:var(--steel);margin:-4px 0 14px;line-height:1.5;
+  padding:8px 12px;background:var(--paper-deep);border:1px solid var(--line);border-radius:8px;
+}
+.cart-meta b{color:var(--charcoal);font-weight:700;font-family:'Roboto Mono',monospace;}
+.cart-meta .note{display:block;font-size:10.5px;color:#A99E8B;margin-top:3px;}
+.calc-result .ctx{color:var(--steel);}
 
 .p-chips{display:flex;flex-wrap:wrap;gap:6px;}
 .info-chip{
@@ -345,7 +359,7 @@ footer{
 
 <div class="hero">
   <h1>Прайс-лист</h1>
-  <p>Актуальные цены по всем позициям склада. Введите нужную площадь в м² в карточке товара — калькулятор сразу посчитает количество упаковок и итоговую стоимость.</p>
+  <p>Актуальные цены по всем позициям склада. Укажите количество в карточке товара — калькулятор посчитает площадь, объём, ориентировочный вес и итоговую стоимость.</p>
 </div>
 
 <div class="chips-wrap" id="chipsWrap"></div>
@@ -374,6 +388,7 @@ footer{
   <div class="cart-body" id="cartBody"></div>
   <div class="cart-foot" id="cartFoot" style="display:none;">
     <div class="cart-total-row"><span class="lbl">Итого</span><span class="sum" id="cartSum">0 ₽</span></div>
+    <div class="cart-meta" id="cartMeta"></div>
     <div class="cart-field">
       <label>Ваше имя</label>
       <input type="text" id="custName" placeholder="Как к вам обращаться">
@@ -405,6 +420,69 @@ const PRODUCTS = [{"cat": "ЭППС", "name": "Пеноплекс Комфорт
 
 const fmt = n => n === null || n === undefined ? '—' : new Intl.NumberFormat('ru-RU').format(Math.round(n));
 const fmtDec = n => n === null || n === undefined ? '—' : (Number.isInteger(n) ? n : n.toFixed(2).replace(/\.?0+$/,''));
+const round3 = n => +n.toFixed(3);
+
+// Категории, где считаем в единицах продажи (упаковки/рулоны/листы), а не в м²
+const UNIT_INPUT_CATS = new Set(['ЭППС','LOGICPIR','Минвата','Стекловата','ГКЛ','OSB Kronospan Класс L-3 водостойкая']);
+PRODUCTS.forEach(p => {
+  if(UNIT_INPUT_CATS.has(p.cat)){ p.calc_mode = 'qty'; p.calc_step = 1; }
+});
+
+// Ориентировочный вес одной единицы продажи (кг): плотность × объём, либо г/м² × площадь, либо оценка по категории
+function unitWeight(p){
+  const d = String(p.density || '');
+  if(/гр\/м2|г\/м2/i.test(d) && p.m2_pack){
+    const g = parseFloat(d.replace(',', '.').match(/[\d.]+/)?.[0]);
+    if(g) return p.m2_pack * g / 1000;
+  }
+  const m = d.replace(',', '.').match(/[\d.]+/);
+  const dens = m ? parseFloat(m[0]) : null;
+  if(dens && p.m3_pack) return p.m3_pack * dens;      // кг/м³ × м³
+  if(p.m3_pack){                                       // оценка по категории
+    if(p.cat && p.cat.indexOf('OSB') === 0) return p.m3_pack * 615;
+    if(p.cat === 'ГКЛ') return p.m3_pack * 800;
+  }
+  return null;
+}
+// Словоформа единицы для подписи ввода
+function unitWord(p){
+  if(p.unit_label === 'лист') return 'листов';
+  if(p.unit_label === 'ед.') return 'шт';
+  return p.unit_label; // уп., рул., шт
+}
+function promptFor(p){
+  if(p.calc_mode === 'qty') return p.calc_step > 1 ? 'введите количество' : ('введите кол-во, ' + unitWord(p));
+  if(p.calc_mode === 'length') return 'введите длину';
+  return 'введите площадь';
+}
+// Подсказка: сколько м² / м³ / кг даёт указанное число единиц
+function ctxLine(p, units){
+  if(p.hide_m2_chip) return '';
+  const bits = [];
+  if(p.m2_pack) bits.push(`${fmtDec(+(units*p.m2_pack).toFixed(2))} м²`);
+  if(p.m3_pack) bits.push(`${fmtDec(round3(units*p.m3_pack))} м³`);
+  const w = unitWeight(p); if(w) bits.push(`≈ ${fmt(units*w)} кг`);
+  return bits.join(' · ');
+}
+// Фасовка одной единицы для карточки (различает похожие позиции)
+function packLabel(p){
+  if(p.cat === 'Для монтажа утеплителя') return ''; // расход, а не фасовка — бейдж не нужен
+  const bits = [];
+  if(p.plates) bits.push(`<b>${fmtDec(p.plates)}</b> шт`);
+  if(p.m2_pack && !p.hide_m2_chip) bits.push(`<b>${fmtDec(p.m2_pack)}</b> м²`);
+  const w = unitWeight(p); if(w) bits.push(`≈ <b>${fmt(w)}</b> кг`);
+  return bits.length ? bits.join(' · ') : '';
+}
+// Итоги сметы: объём и ориентировочный вес
+function cartTotals(){
+  let vol = 0, wt = 0, wtUnknown = false, hasVol = false;
+  Object.keys(cart).forEach(idx => {
+    const p = PRODUCTS[idx], u = cart[idx];
+    if(!p.hide_m2_chip && p.m3_pack){ vol += u*p.m3_pack; hasVol = true; }
+    const w = unitWeight(p); if(w) wt += u*w; else wtUnknown = true;
+  });
+  return { vol, wt, wtUnknown, hasVol };
+}
 
 const catalog = document.getElementById('catalog');
 const chipsWrap = document.getElementById('chipsWrap');
@@ -449,10 +527,7 @@ function renderChips(){
 
 function productCard(p, idx){
   const chips = [];
-  if(p.plates) chips.push(`<span class="info-chip"><b>${fmtDec(p.plates)}</b> плит/уп</span>`);
   if(p.chip_note) chips.push(`<span class="info-chip"><b>${p.chip_note}</b></span>`);
-  if(!p.hide_m2_chip && p.m2_pack) chips.push(`<span class="info-chip"><b>${fmtDec(p.m2_pack)}</b> м²/${p.unit_label}</span>`);
-  if(p.m3_pack) chips.push(`<span class="info-chip"><b>${fmtDec(p.m3_pack)}</b> м³/уп</span>`);
   if(p.thickness) chips.push(`<span class="info-chip">толщ. <b>${fmtDec(p.thickness)}</b> мм</span>`);
   if(p.size) chips.push(`<span class="info-chip">${p.size} мм</span>`);
   if(p.density) chips.push(`<span class="info-chip">${p.density}</span>`);
@@ -469,10 +544,10 @@ function productCard(p, idx){
   } else if(p.calc_mode === 'qty' && p.display_price){
     calcInner = `
       <div class="calc-input-row">
-        <label>${p.calc_step > 1 ? 'Дюбелей, шт' : 'Кол-во, шт'}:</label>
+        <label>${p.calc_step > 1 ? 'Дюбелей, шт' : ('Кол-во, ' + unitWord(p))}:</label>
         <input type="number" min="0" step="${p.calc_step || 1}" data-idx="${idx}" class="calc-in" placeholder="0">
       </div>
-      <div class="calc-result calc-empty" id="calc-${idx}">введите количество</div>`;
+      <div class="calc-result calc-empty" id="calc-${idx}">${promptFor(p)}</div>`;
   } else if(p.calc_mode === 'length' && p.display_price && p.calc_unit_size){
     calcInner = `
       <div class="calc-input-row">
@@ -495,6 +570,7 @@ function productCard(p, idx){
   <div class="product">
     <div>
       <div class="p-name">${p.name}</div>
+      ${packLabel(p) ? `<div class="p-pack">1 ${p.unit_label}: ${packLabel(p)}</div>` : ''}
       <div class="p-meta">${p.full_name}</div>
     </div>
     <div class="p-chips">${chips.join('')}</div>
@@ -510,34 +586,34 @@ function calcHandler(e){
   const out = document.getElementById('calc-'+idx);
   if(!need || need <= 0){
     out.className = 'calc-result calc-empty';
-    out.textContent = p.calc_mode === 'qty' ? 'введите количество' : (p.calc_mode === 'length' ? 'введите длину' : 'введите площадь');
+    out.textContent = promptFor(p);
     return;
   }
   out.className = 'calc-result';
 
-  if(p.calc_mode === 'qty'){
-    const step = p.calc_step || 1;
-    const qty = Math.ceil(need / step) * step;
-    const total = qty * p.display_price;
-    if(step > 1){
-      out.innerHTML = `<span class="hl">${fmt(qty)} шт</span> · ${qty/step} уп. × ${step}<br><span class="total">Итого: ${fmt(total)} ₽</span>`;
-    } else {
-      out.innerHTML = `<span class="hl">${qty} ${p.unit_label}</span><br><span class="total">Итого: ${fmt(total)} ₽</span>`;
-    }
-    return;
-  }
+  // Погонные профили ПВХ — считаем перекрытие в метрах
   if(p.calc_mode === 'length'){
     const units = Math.ceil(need / p.calc_unit_size);
     const totalLen = +(units * p.calc_unit_size).toFixed(2);
-    const total = units * p.display_price;
-    out.innerHTML = `<span class="hl">${units} ${p.unit_label}</span> · перекроет <span class="hl">${fmtDec(totalLen)} м</span><br><span class="total">Итого: ${fmt(total)} ₽</span>`;
+    out.innerHTML = `<span class="hl">${units} ${p.unit_label}</span> · перекроет <span class="hl">${fmtDec(totalLen)} м</span><br><span class="total">Итого: ${fmt(units*p.display_price)} ₽</span>`;
+    if(cart[idx]){ cart[idx] = units; updateFab(); renderCart(); }
     return;
   }
-  // area (default)
-  const packs = Math.ceil(need / p.calc_unit_size);
-  const totalM2 = +(packs * p.calc_unit_size).toFixed(2);
-  const total = packs * p.display_price;
-  out.innerHTML = `<span class="hl">${packs} ${p.unit_label}</span> · накроет <span class="hl">${fmtDec(totalM2)} м²</span><br><span class="total">Итого: ${fmt(total)} ₽</span>`;
+
+  // qty (упаковки/рулоны/листы/штуки) и area
+  const units = computeUnits(p, need);
+  const total = units * p.display_price;
+  let primary;
+  if(p.calc_mode === 'qty' && p.calc_step > 1){
+    primary = `${fmt(units)} шт · ${units/p.calc_step} уп. × ${p.calc_step}`;
+  } else {
+    primary = `${fmt(units)} ${p.unit_label}`;
+  }
+  const ctx = ctxLine(p, units);
+  out.innerHTML = `<span class="hl">${primary}</span>${ctx ? ` <span class="ctx">· ${ctx}</span>` : ''}<br><span class="total">Итого: ${fmt(total)} ₽</span>`;
+
+  // Live-пересчёт сметы, если позиция уже добавлена
+  if(cart[idx]){ cart[idx] = units; updateFab(); renderCart(); }
 }
 
 function render(){
@@ -664,6 +740,20 @@ function renderCart(){
     '</div>';
   }).join('');
   document.getElementById('cartSum').textContent = fmt(cartTotal())+' ₽';
+  const meta = document.getElementById('cartMeta');
+  if(meta){
+    const t = cartTotals();
+    const bits = [];
+    if(t.hasVol) bits.push(`Объём ≈ <b>${fmtDec(+t.vol.toFixed(2))} м³</b>`);
+    if(t.wt > 0) bits.push(`Вес ≈ <b>${fmt(t.wt)} кг</b>`);
+    if(bits.length){
+      const note = t.wtUnknown
+        ? '<span class="note">* ориентировочно; часть позиций без данных о весе</span>'
+        : '<span class="note">* ориентировочно, для оценки доставки</span>';
+      meta.innerHTML = bits.join(' · ') + note;
+      meta.style.display = 'block';
+    } else { meta.innerHTML = ''; meta.style.display = 'none'; }
+  }
   foot.style.display = 'block';
 }
 function openCart(){ renderCart(); document.getElementById('cartOverlay').classList.add('show'); document.getElementById('cartPanel').classList.add('show'); }
@@ -689,8 +779,11 @@ function buildOrderText(){
     const p = PRODUCTS[idx]; const u = cart[idx]; const lt = u*p.display_price;
     t += '☐ ' + p.full_name + '\n   ' + fmt(u) + ' ' + p.unit_label + ' × ' + fmt(p.display_price) + ' ₽ = ' + fmt(lt) + ' ₽\n';
   });
-  t += '\nИтого: ' + fmt(cartTotal()) + ' ₽\n\n';
-  t += 'Имя: ' + c.name + '\nТелефон: ' + c.phone + '\nАдрес доставки: ' + (c.address || 'не указан') + '\n';
+  t += '\nИтого: ' + fmt(cartTotal()) + ' ₽\n';
+  const tot = cartTotals();
+  if(tot.hasVol) t += 'Ориентировочный объём: ' + fmtDec(+tot.vol.toFixed(2)) + ' м³\n';
+  if(tot.wt > 0) t += 'Ориентировочный вес: ' + fmt(tot.wt) + ' кг' + (tot.wtUnknown ? ' (по позициям с известными данными)' : '') + '\n';
+  t += '\nИмя: ' + c.name + '\nТелефон: ' + c.phone + '\nАдрес доставки: ' + (c.address || 'не указан') + '\n';
   return t;
 }
 function copyText(text){
@@ -764,6 +857,11 @@ function orderHtml(){
     '<tr><td colspan="3" style="text-align:right;font-weight:bold;border-top:2px solid #999">Итого</td>'+
     '<td style="text-align:right;font-weight:bold;white-space:nowrap;border-top:2px solid #999">'+fmt(cartTotal())+' ₽</td></tr>'+
     '</table>'+
+    (function(){ const tot=cartTotals(); const l=[];
+      if(tot.hasVol) l.push('Ориентировочный объём: '+fmtDec(+tot.vol.toFixed(2))+' м³');
+      if(tot.wt>0) l.push('Ориентировочный вес: '+fmt(tot.wt)+' кг'+(tot.wtUnknown?' (по позициям с известными данными)':''));
+      return l.length ? '<p style="font-family:Arial,sans-serif;font-size:12px;color:#555;margin-top:8px">'+l.join(' · ')+'</p>' : '';
+    })()+
     '<p style="font-family:Arial,sans-serif;font-size:13px;margin-top:14px">Имя: '+esc(c.name)+'<br>Телефон: '+esc(c.phone)+'<br>Адрес доставки: '+esc(c.address||'не указан')+'</p>'+
     '<p style="font-family:Arial,sans-serif;font-size:12px;color:#777">Менеджер свяжется с вами для уточнения заказа.</p>';
 }
