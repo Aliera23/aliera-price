@@ -893,51 +893,57 @@ function showToast(msg){
 }
 
 /* ============================================================
-   ЦЕНЫ ИЗ GOOGLE-ТАБЛИЦЫ
+   ЦЕНЫ ИЗ GOOGLE-ТАБЛИЦЫ (рабочая таблица 1С)
    ------------------------------------------------------------
-   Чтобы цены на сайте брались из вашей Google-таблицы:
-   1) Создайте таблицу по шаблону (файл «Прайс_АЛИЕРА_шаблон.csv»).
-   2) В таблице: Настройки доступа → «Все, у кого есть ссылка» → «Читатель».
-   3) Скопируйте ID таблицы из её адреса:
-      https://docs.google.com/spreadsheets/d/ВОТ_ЭТОТ_ID/edit
-   4) Вставьте ID в строку ниже (в кавычки) и укажите имя листа.
-   Пока ID пустой — сайт работает на встроенных ценах.
+   Сайт читает цены из вашей Google-таблицы по «Коду в 1С».
+   Меняете цену в таблице ОНЛАЙН → на сайте обновляется при
+   следующей загрузке страницы. Ничего перезаливать не нужно.
+
+   Настройки: ID таблицы и имя листа — в двух строках ниже.
+   Требования к таблице:
+     • доступ: «Все, у кого есть ссылка» → «Читатель»
+     • колонка «Код в 1С» (ключ), «Цена руб/упак», «руб/лист», «руб/м²»
    ============================================================ */
 const SHEET_ID   = "1jQdOs81cq9-Ho3sTGu-kxMiagsOhLEGu_erRwJylKbk";  // ID вашей таблицы
 const SHEET_NAME = "Прайс";     // имя вкладки (листа) в таблице
 
-// Разбор числа: "2 500", "13,86", 2500 → число; пусто → null
+// Код 1С для каждой позиции — получен сопоставлением по названию. НЕ МЕНЯТЬ.
+const CODE_MAP = {0:"НФ-00000383",1:"НФ-00000410",2:"НФ-00000411",3:"НФ-00000412",4:"НФ-00000413",5:"НФ-00000414",6:"НФ-00000415",7:"00-00001024",8:"00-00001083",9:"00-00001742",10:"НФ-00000417",11:"НФ-00000418",12:"НФ-00000419",13:"НФ-00000416",14:"НФ-00000420",15:"НФ-00000421",16:"НФ-00000422",17:"НФ-00000423",18:"НФ-00000424",19:"НФ-00000425",20:"НФ-00000426",21:"НФ-00000427",22:"НФ-00000428",23:"НФ-00000319",24:"НФ-00000321",25:"НФ-00000318",26:"НФ-00000308",27:"НФ-00000310",28:"НФ-00000309",29:"НФ-00000429",30:"НФ-00000311",31:"НФ-00000312",32:"НФ-00000307",33:"НФ-00000305",34:"НФ-00000306",35:"НФ-00000555",36:"НФ-00000193",37:"НФ-00000195",38:"НФ-00000314",39:"НФ-00000313",46:"НФ-00000317",47:"00-00002893",48:"НФ-00000255",49:"НФ-00000247",50:"НФ-00000250",51:"НФ-00000251",52:"НФ-00000252",53:"НФ-00000142",54:"НФ-00000434",55:"НФ-00000432",56:"00-00000680",57:"00-00000679",58:"00-00000229",59:"00-00000896",60:"НФ-00000209",61:"НФ-00000206",62:"00-00003462",63:"НФ-00000211",64:"00-00000234",65:"00-00003021",66:"00-00002420",67:"00-00000230",68:"00-00000346",69:"00-00004190",70:"00-00000670",71:"00-00003571",72:"НФ-00000664",73:"НФ-00000665",74:"00-00002063",75:"00-00002150",76:"00-00000235",77:"НФ-00000557",78:"00-00004271",79:"НФ-00000435",80:"НФ-00000436",81:"НФ-00000437",82:"НФ-00000438",83:"НФ-00000439",84:"00-00003694",85:"00-00003675",86:"00-00003695",87:"00-00003676",88:"БП-00004473",89:"БП-00004474",90:"БП-00004475",91:"БП-00004476",92:"НФ-00000290",93:"00-00004283",94:"00-00003962",95:"00-00001898",96:"НФ-00000169",97:"НФ-00000440",98:"НФ-00000431",99:"НФ-00000430",100:"НФ-00000136",101:"НФ-00000140",102:"00-00002450",103:"00-00003847",104:"00-00002831",105:"НФ-00000137",106:"НФ-00000138",107:"НФ-00000291",108:"НФ-00000139",109:"00-00003051"};
+PRODUCTS.forEach((p, i) => { p.code = CODE_MAP[i] || null; });
+
+// "2 800 ₽", "13,86", 2800 → число; пусто → null
 function parseNum(v){
   if(v === null || v === undefined || v === '') return null;
   if(typeof v === 'number') return v;
-  const s = String(v).replace(/\u00a0/g,'').replace(/\s+/g,'').replace(',', '.');
+  const s = String(v).replace(/[^\d.,\-]/g,'').replace(/\s+/g,'').replace(',', '.');
   const n = parseFloat(s);
   return isNaN(n) ? null : n;
 }
-// Определяем назначение колонки по её заголовку
+// Назначение колонки по заголовку (устойчиво к порядку и лишним столбцам)
 function colRole(label){
-  const h = String(label||'').toLowerCase().replace(/[.\s]/g,'');
-  if(/^(id|ид|артикул|код|№|номер)$/.test(h) || h.includes('артикул')) return 'id';
-  if(h.includes('м2') || h.includes('м²')) return 'm2';
-  if(h.includes('лист') || h.includes('шт'))  return 'sheet';
+  const h = String(label||'').toLowerCase().replace(/ё/g,'е').replace(/[.\s]/g,'');
+  if(h.includes('код') || h.includes('артикул')) return 'code';
+  if(/^(id|ид|№|номер)$/.test(h)) return 'id';
   if(h.includes('налич') || h.includes('статус')) return 'status';
-  if(h.includes('цена') || h.includes('осн')) return 'main';
-  return null;
+  if(h.includes('руб') || h.includes('цена')){        // это ценовая колонка
+    if(h.includes('м²') || h.includes('м2')) return 'm2';
+    if(h.includes('лист') || h.includes('шт'))  return 'sheet';
+    return 'main';
+  }
+  return null;   // "Размер листа", "Упаковка плит", "м²"(объём) и пр. — не цена
 }
-// Патчим значение внутри существующей строки extra_rows по названию
 function patchExtra(p, needle, val){
   (p.extra_rows || []).forEach(row => { if(String(row[0]).includes(needle)) row[1] = val; });
 }
-// Применяем цены из таблицы поверх встроенных данных
-function applyPriceRow(byId, map, cells){
-  const idVal = parseNum(cells[map.id]);
-  if(idVal === null) return;
-  const p = byId[idVal];
-  if(!p) return;
+function applyPriceRow(byKey, map, keyRole, cells){
+  const rawKey = cells[keyRole === 'code' ? map.code : map.id];
+  const key = keyRole === 'code' ? String(rawKey||'').trim() : parseNum(rawKey);
+  if(key === null || key === '' ) return false;
+  const p = byKey[key];
+  if(!p) return false;
 
-  // Наличие: «по запросу»/«нет»/«скрыть» → прячем цену (карточка «Цена по запросу»)
   const status = String(cells[map.status] || '').toLowerCase();
-  const hidePrice = /запрос|нет|скрыт|0/.test(status) && status !== '';
+  const hidePrice = status !== '' && /запрос|нет|скрыт/.test(status);
 
   if('main' in map){
     const v = parseNum(cells[map.main]);
@@ -954,36 +960,39 @@ function applyPriceRow(byId, map, cells){
     const v = parseNum(cells[map.m2]);
     if(v !== null){ p.price_m2 = v; patchExtra(p, 'м²', v); }
   }
+  return true;
 }
-// Загружаем цены из Google-таблицы (gviz JSON — не зависит от локали, числа приходят числами)
 function loadPricesFromSheet(){
-  if(!SHEET_ID){ return; }  // не настроено — работаем на встроенных ценах
+  if(!SHEET_ID){ return; }
+  // &_=время — сбивает кэш браузера, чтобы всегда брались свежие цены
   const url = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID +
-              '/gviz/tq?tqx=out:json&sheet=' + encodeURIComponent(SHEET_NAME);
-  fetch(url)
+              '/gviz/tq?tqx=out:json&headers=2&sheet=' + encodeURIComponent(SHEET_NAME) +
+              '&_=' + Date.now();
+  fetch(url, { cache: 'no-store' })
     .then(r => r.text())
     .then(txt => {
       const json = JSON.parse(txt.substring(txt.indexOf('{'), txt.lastIndexOf('}') + 1));
       const cols = json.table.cols.map(c => c.label);
-      // Если заголовки пустые (лист без строки заголовка) — берём первую строку данных как заголовки
-      const rows = json.table.rows.map(r => (r.c || []).map(c => c ? c.v : null));
+      let rows = json.table.rows.map(r => (r.c || []).map(c => c ? c.v : null));
       let header = cols, dataRows = rows;
       if(cols.every(c => !c) && rows.length){ header = rows[0]; dataRows = rows.slice(1); }
       const map = {};
-      header.forEach((label, i) => { const role = colRole(label); if(role) map[role] = i; });
-      if(!('id' in map)){ console.warn('В таблице не найдена колонка id — цены не обновлены'); return; }
-      const byId = {}; PRODUCTS.forEach(p => byId[p.id] = p);
-      dataRows.forEach(cells => applyPriceRow(byId, map, cells));
+      header.forEach((label, i) => { const role = colRole(label); if(role && !(role in map)) map[role] = i; });
+      const keyRole = ('code' in map) ? 'code' : ('id' in map) ? 'id' : null;
+      if(!keyRole){ console.warn('[Прайс] В таблице не найдена колонка «Код в 1С» / id — цены не обновлены. Заголовки:', header); return; }
+      const byKey = {};
+      PRODUCTS.forEach(p => { const k = keyRole === 'code' ? p.code : p.id; if(k) byKey[k] = p; });
+      let n = 0;
+      dataRows.forEach(cells => { if(applyPriceRow(byKey, map, keyRole, cells)) n++; });
+      console.log('[Прайс] Загружено из таблицы. Колонки:', map, '| обновлено позиций:', n);
       render();
-      showToast('Цены обновлены из таблицы');
+      showToast(n ? ('Цены из таблицы: ' + n + ' поз.') : 'Таблица прочитана, но совпадений нет');
     })
-    .catch(err => {
-      console.warn('Не удалось загрузить цены из таблицы, показаны встроенные:', err);
-    });
+    .catch(err => { console.warn('Не удалось загрузить цены из таблицы, показаны встроенные:', err); });
 }
 
-render();          // мгновенно рисуем на встроенных ценах
-loadPricesFromSheet();  // затем в фоне подтягиваем из таблицы и перерисовываем
+render();               // мгновенно — на встроенных ценах
+loadPricesFromSheet();  // затем в фоне из таблицы 1С и перерисовка
 </script>
 </body>
 </html>
