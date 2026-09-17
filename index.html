@@ -74,6 +74,21 @@ header.top{
 }
 .address-btn:hover{background:rgba(255,90,38,.3);}
 .address-btn svg{flex-shrink:0;}
+.brand-link{display:flex;align-items:center;gap:14px;text-decoration:none;cursor:pointer;}
+.brand-link:hover .brand-name{color:var(--orange);transition:color .15s ease;}
+.site-btn{
+  display:flex;align-items:center;gap:7px;
+  font-size:12.5px;font-weight:700;color:#fff;white-space:nowrap;
+  text-decoration:none;
+  background:var(--orange);
+  border:1px solid var(--orange);
+  padding:9px 16px;border-radius:999px;
+  transition:background .15s ease,border-color .15s ease;
+}
+.site-btn:hover{background:var(--orange-deep);border-color:var(--orange-deep);}
+.site-btn svg{flex-shrink:0;}
+.footer-link{color:#fff;text-decoration:none;border-bottom:1px solid var(--orange);padding-bottom:1px;}
+.footer-link:hover{color:var(--orange);}
 
 .hero{
   max-width:1180px;margin:0 auto;padding:34px 24px 18px;
@@ -141,20 +156,6 @@ main{max-width:1180px;margin:0 auto;padding:0 24px 80px;}
 .p-meta{
   margin-top:5px;font-size:12.5px;color:var(--steel);
 }
-.p-pack{
-  margin-top:6px;display:inline-block;
-  font-family:'Roboto Mono',monospace;font-size:11.5px;font-weight:500;
-  background:var(--paper-deep);border:1px solid var(--line);
-  color:var(--charcoal-soft);padding:3px 9px;border-radius:7px;
-}
-.p-pack b{color:var(--orange-deep);font-weight:600;}
-.cart-meta{
-  font-size:12px;color:var(--steel);margin:-4px 0 14px;line-height:1.5;
-  padding:8px 12px;background:var(--paper-deep);border:1px solid var(--line);border-radius:8px;
-}
-.cart-meta b{color:var(--charcoal);font-weight:700;font-family:'Roboto Mono',monospace;}
-.cart-meta .note{display:block;font-size:10.5px;color:#A99E8B;margin-top:3px;}
-.calc-result .ctx{color:var(--steel);}
 
 .p-chips{display:flex;flex-wrap:wrap;gap:6px;}
 .info-chip{
@@ -339,11 +340,13 @@ footer{
 
 <header class="top">
   <div class="top-inner">
+    <a href="https://aliera23.ru/" class="brand-link" title="Вернуться на сайт aliera23.ru">
     <div class="logo-mark"><img src="data:image/png;base64,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" alt="Алиера"></div>
     <div class="brand-block">
       <span class="brand-name">АЛИЕРА</span>
       <span class="brand-sub">стройматериалы оптом</span>
     </div>
+    </a>
     <div class="top-search">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       <input id="searchInput" type="text" placeholder="Поиск по каталогу — например, пеноплекс 50 мм">
@@ -352,6 +355,10 @@ footer{
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
       Адрес склада
     </a>
+    <a class="site-btn" href="https://aliera23.ru/" title="Вернуться на сайт">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      На сайт
+    </a>
   </div>
 </header>
 
@@ -359,7 +366,7 @@ footer{
 
 <div class="hero">
   <h1>Прайс-лист</h1>
-  <p>Актуальные цены по всем позициям склада. Укажите количество в карточке товара — калькулятор посчитает площадь, объём, ориентировочный вес и итоговую стоимость.</p>
+  <p>Актуальные цены по всем позициям склада. Введите нужную площадь в м² в карточке товара — калькулятор сразу посчитает количество упаковок и итоговую стоимость.</p>
 </div>
 
 <div class="chips-wrap" id="chipsWrap"></div>
@@ -369,7 +376,9 @@ footer{
 <footer>
   <div class="footer-inner">
     <div><b>ООО «Алиера»</b> — поставщик строительных и теплоизоляционных материалов</div>
-    <div>sale@aliera23.ru · ПН–ВС 8:00–17:00</div>
+    <div>sale@aliera23.ru · <a class="footer-link" href="tel:+79693006425">+7 969 300-64-25</a> · ПН–ВС 8:00–17:00</div>
+    <div><a class="footer-link" href="https://max.ru/u/f9LHodD0cOL5442uWpeRYm6AVyH33JSqBsW3o3GnWb7UVFMZZ3cqKqMMopY" target="_blank" rel="noopener">Написать в MAX</a></div>
+    <div><a class="footer-link" href="https://aliera23.ru/">← Вернуться на сайт aliera23.ru</a></div>
   </div>
 </footer>
 
@@ -388,7 +397,6 @@ footer{
   <div class="cart-body" id="cartBody"></div>
   <div class="cart-foot" id="cartFoot" style="display:none;">
     <div class="cart-total-row"><span class="lbl">Итого</span><span class="sum" id="cartSum">0 ₽</span></div>
-    <div class="cart-meta" id="cartMeta"></div>
     <div class="cart-field">
       <label>Ваше имя</label>
       <input type="text" id="custName" placeholder="Как к вам обращаться">
@@ -420,71 +428,6 @@ const PRODUCTS = [{"cat": "ЭППС", "name": "Пеноплекс Комфорт
 
 const fmt = n => n === null || n === undefined ? '—' : new Intl.NumberFormat('ru-RU').format(Math.round(n));
 const fmtDec = n => n === null || n === undefined ? '—' : (Number.isInteger(n) ? n : n.toFixed(2).replace(/\.?0+$/,''));
-const round3 = n => +n.toFixed(3);
-
-// Категории, где считаем в единицах продажи (упаковки/рулоны/листы), а не в м²
-const UNIT_INPUT_CATS = new Set(['ЭППС','LOGICPIR','Минвата','Стекловата','ГКЛ','OSB Kronospan Класс L-3 водостойкая']);
-PRODUCTS.forEach(p => {
-  if(UNIT_INPUT_CATS.has(p.cat)){ p.calc_mode = 'qty'; p.calc_step = 1; }
-});
-// Стабильный id для связи со строками Google-таблицы (не менять порядок массива!)
-PRODUCTS.forEach((p, i) => { p.id = i + 1; });
-
-// Ориентировочный вес одной единицы продажи (кг): плотность × объём, либо г/м² × площадь, либо оценка по категории
-function unitWeight(p){
-  const d = String(p.density || '');
-  if(/гр\/м2|г\/м2/i.test(d) && p.m2_pack){
-    const g = parseFloat(d.replace(',', '.').match(/[\d.]+/)?.[0]);
-    if(g) return p.m2_pack * g / 1000;
-  }
-  const m = d.replace(',', '.').match(/[\d.]+/);
-  const dens = m ? parseFloat(m[0]) : null;
-  if(dens && p.m3_pack) return p.m3_pack * dens;      // кг/м³ × м³
-  if(p.m3_pack){                                       // оценка по категории
-    if(p.cat && p.cat.indexOf('OSB') === 0) return p.m3_pack * 615;
-    if(p.cat === 'ГКЛ') return p.m3_pack * 800;
-  }
-  return null;
-}
-// Словоформа единицы для подписи ввода
-function unitWord(p){
-  if(p.unit_label === 'лист') return 'листов';
-  if(p.unit_label === 'ед.') return 'шт';
-  return p.unit_label; // уп., рул., шт
-}
-function promptFor(p){
-  if(p.calc_mode === 'qty') return p.calc_step > 1 ? 'введите количество' : ('введите кол-во, ' + unitWord(p));
-  if(p.calc_mode === 'length') return 'введите длину';
-  return 'введите площадь';
-}
-// Подсказка: сколько м² / м³ / кг даёт указанное число единиц
-function ctxLine(p, units){
-  if(p.hide_m2_chip) return '';
-  const bits = [];
-  if(p.m2_pack) bits.push(`${fmtDec(+(units*p.m2_pack).toFixed(2))} м²`);
-  if(p.m3_pack) bits.push(`${fmtDec(round3(units*p.m3_pack))} м³`);
-  const w = unitWeight(p); if(w) bits.push(`≈ ${fmt(units*w)} кг`);
-  return bits.join(' · ');
-}
-// Фасовка одной единицы для карточки (различает похожие позиции)
-function packLabel(p){
-  if(p.cat === 'Для монтажа утеплителя') return ''; // расход, а не фасовка — бейдж не нужен
-  const bits = [];
-  if(p.plates) bits.push(`<b>${fmtDec(p.plates)}</b> шт`);
-  if(p.m2_pack && !p.hide_m2_chip) bits.push(`<b>${fmtDec(p.m2_pack)}</b> м²`);
-  const w = unitWeight(p); if(w) bits.push(`≈ <b>${fmt(w)}</b> кг`);
-  return bits.length ? bits.join(' · ') : '';
-}
-// Итоги сметы: объём и ориентировочный вес
-function cartTotals(){
-  let vol = 0, wt = 0, wtUnknown = false, hasVol = false;
-  Object.keys(cart).forEach(idx => {
-    const p = PRODUCTS[idx], u = cart[idx];
-    if(!p.hide_m2_chip && p.m3_pack){ vol += u*p.m3_pack; hasVol = true; }
-    const w = unitWeight(p); if(w) wt += u*w; else wtUnknown = true;
-  });
-  return { vol, wt, wtUnknown, hasVol };
-}
 
 const catalog = document.getElementById('catalog');
 const chipsWrap = document.getElementById('chipsWrap');
@@ -529,7 +472,10 @@ function renderChips(){
 
 function productCard(p, idx){
   const chips = [];
+  if(p.plates) chips.push(`<span class="info-chip"><b>${fmtDec(p.plates)}</b> плит/уп</span>`);
   if(p.chip_note) chips.push(`<span class="info-chip"><b>${p.chip_note}</b></span>`);
+  if(!p.hide_m2_chip && p.m2_pack) chips.push(`<span class="info-chip"><b>${fmtDec(p.m2_pack)}</b> м²/${p.unit_label}</span>`);
+  if(p.m3_pack) chips.push(`<span class="info-chip"><b>${fmtDec(p.m3_pack)}</b> м³/уп</span>`);
   if(p.thickness) chips.push(`<span class="info-chip">толщ. <b>${fmtDec(p.thickness)}</b> мм</span>`);
   if(p.size) chips.push(`<span class="info-chip">${p.size} мм</span>`);
   if(p.density) chips.push(`<span class="info-chip">${p.density}</span>`);
@@ -546,10 +492,10 @@ function productCard(p, idx){
   } else if(p.calc_mode === 'qty' && p.display_price){
     calcInner = `
       <div class="calc-input-row">
-        <label>${p.calc_step > 1 ? 'Дюбелей, шт' : ('Кол-во, ' + unitWord(p))}:</label>
+        <label>${p.calc_step > 1 ? 'Дюбелей, шт' : 'Кол-во, шт'}:</label>
         <input type="number" min="0" step="${p.calc_step || 1}" data-idx="${idx}" class="calc-in" placeholder="0">
       </div>
-      <div class="calc-result calc-empty" id="calc-${idx}">${promptFor(p)}</div>`;
+      <div class="calc-result calc-empty" id="calc-${idx}">введите количество</div>`;
   } else if(p.calc_mode === 'length' && p.display_price && p.calc_unit_size){
     calcInner = `
       <div class="calc-input-row">
@@ -572,7 +518,6 @@ function productCard(p, idx){
   <div class="product">
     <div>
       <div class="p-name">${p.name}</div>
-      ${packLabel(p) ? `<div class="p-pack">1 ${p.unit_label}: ${packLabel(p)}</div>` : ''}
       <div class="p-meta">${p.full_name}</div>
     </div>
     <div class="p-chips">${chips.join('')}</div>
@@ -588,34 +533,34 @@ function calcHandler(e){
   const out = document.getElementById('calc-'+idx);
   if(!need || need <= 0){
     out.className = 'calc-result calc-empty';
-    out.textContent = promptFor(p);
+    out.textContent = p.calc_mode === 'qty' ? 'введите количество' : (p.calc_mode === 'length' ? 'введите длину' : 'введите площадь');
     return;
   }
   out.className = 'calc-result';
 
-  // Погонные профили ПВХ — считаем перекрытие в метрах
+  if(p.calc_mode === 'qty'){
+    const step = p.calc_step || 1;
+    const qty = Math.ceil(need / step) * step;
+    const total = qty * p.display_price;
+    if(step > 1){
+      out.innerHTML = `<span class="hl">${fmt(qty)} шт</span> · ${qty/step} уп. × ${step}<br><span class="total">Итого: ${fmt(total)} ₽</span>`;
+    } else {
+      out.innerHTML = `<span class="hl">${qty} ${p.unit_label}</span><br><span class="total">Итого: ${fmt(total)} ₽</span>`;
+    }
+    return;
+  }
   if(p.calc_mode === 'length'){
     const units = Math.ceil(need / p.calc_unit_size);
     const totalLen = +(units * p.calc_unit_size).toFixed(2);
-    out.innerHTML = `<span class="hl">${units} ${p.unit_label}</span> · перекроет <span class="hl">${fmtDec(totalLen)} м</span><br><span class="total">Итого: ${fmt(units*p.display_price)} ₽</span>`;
-    if(cart[idx]){ cart[idx] = units; updateFab(); renderCart(); }
+    const total = units * p.display_price;
+    out.innerHTML = `<span class="hl">${units} ${p.unit_label}</span> · перекроет <span class="hl">${fmtDec(totalLen)} м</span><br><span class="total">Итого: ${fmt(total)} ₽</span>`;
     return;
   }
-
-  // qty (упаковки/рулоны/листы/штуки) и area
-  const units = computeUnits(p, need);
-  const total = units * p.display_price;
-  let primary;
-  if(p.calc_mode === 'qty' && p.calc_step > 1){
-    primary = `${fmt(units)} шт · ${units/p.calc_step} уп. × ${p.calc_step}`;
-  } else {
-    primary = `${fmt(units)} ${p.unit_label}`;
-  }
-  const ctx = ctxLine(p, units);
-  out.innerHTML = `<span class="hl">${primary}</span>${ctx ? ` <span class="ctx">· ${ctx}</span>` : ''}<br><span class="total">Итого: ${fmt(total)} ₽</span>`;
-
-  // Live-пересчёт сметы, если позиция уже добавлена
-  if(cart[idx]){ cart[idx] = units; updateFab(); renderCart(); }
+  // area (default)
+  const packs = Math.ceil(need / p.calc_unit_size);
+  const totalM2 = +(packs * p.calc_unit_size).toFixed(2);
+  const total = packs * p.display_price;
+  out.innerHTML = `<span class="hl">${packs} ${p.unit_label}</span> · накроет <span class="hl">${fmtDec(totalM2)} м²</span><br><span class="total">Итого: ${fmt(total)} ₽</span>`;
 }
 
 function render(){
@@ -742,20 +687,6 @@ function renderCart(){
     '</div>';
   }).join('');
   document.getElementById('cartSum').textContent = fmt(cartTotal())+' ₽';
-  const meta = document.getElementById('cartMeta');
-  if(meta){
-    const t = cartTotals();
-    const bits = [];
-    if(t.hasVol) bits.push(`Объём ≈ <b>${fmtDec(+t.vol.toFixed(2))} м³</b>`);
-    if(t.wt > 0) bits.push(`Вес ≈ <b>${fmt(t.wt)} кг</b>`);
-    if(bits.length){
-      const note = t.wtUnknown
-        ? '<span class="note">* ориентировочно; часть позиций без данных о весе</span>'
-        : '<span class="note">* ориентировочно, для оценки доставки</span>';
-      meta.innerHTML = bits.join(' · ') + note;
-      meta.style.display = 'block';
-    } else { meta.innerHTML = ''; meta.style.display = 'none'; }
-  }
   foot.style.display = 'block';
 }
 function openCart(){ renderCart(); document.getElementById('cartOverlay').classList.add('show'); document.getElementById('cartPanel').classList.add('show'); }
@@ -781,11 +712,8 @@ function buildOrderText(){
     const p = PRODUCTS[idx]; const u = cart[idx]; const lt = u*p.display_price;
     t += '☐ ' + p.full_name + '\n   ' + fmt(u) + ' ' + p.unit_label + ' × ' + fmt(p.display_price) + ' ₽ = ' + fmt(lt) + ' ₽\n';
   });
-  t += '\nИтого: ' + fmt(cartTotal()) + ' ₽\n';
-  const tot = cartTotals();
-  if(tot.hasVol) t += 'Ориентировочный объём: ' + fmtDec(+tot.vol.toFixed(2)) + ' м³\n';
-  if(tot.wt > 0) t += 'Ориентировочный вес: ' + fmt(tot.wt) + ' кг' + (tot.wtUnknown ? ' (по позициям с известными данными)' : '') + '\n';
-  t += '\nИмя: ' + c.name + '\nТелефон: ' + c.phone + '\nАдрес доставки: ' + (c.address || 'не указан') + '\n';
+  t += '\nИтого: ' + fmt(cartTotal()) + ' ₽\n\n';
+  t += 'Имя: ' + c.name + '\nТелефон: ' + c.phone + '\nАдрес доставки: ' + (c.address || 'не указан') + '\n';
   return t;
 }
 function copyText(text){
@@ -859,11 +787,6 @@ function orderHtml(){
     '<tr><td colspan="3" style="text-align:right;font-weight:bold;border-top:2px solid #999">Итого</td>'+
     '<td style="text-align:right;font-weight:bold;white-space:nowrap;border-top:2px solid #999">'+fmt(cartTotal())+' ₽</td></tr>'+
     '</table>'+
-    (function(){ const tot=cartTotals(); const l=[];
-      if(tot.hasVol) l.push('Ориентировочный объём: '+fmtDec(+tot.vol.toFixed(2))+' м³');
-      if(tot.wt>0) l.push('Ориентировочный вес: '+fmt(tot.wt)+' кг'+(tot.wtUnknown?' (по позициям с известными данными)':''));
-      return l.length ? '<p style="font-family:Arial,sans-serif;font-size:12px;color:#555;margin-top:8px">'+l.join(' · ')+'</p>' : '';
-    })()+
     '<p style="font-family:Arial,sans-serif;font-size:13px;margin-top:14px">Имя: '+esc(c.name)+'<br>Телефон: '+esc(c.phone)+'<br>Адрес доставки: '+esc(c.address||'не указан')+'</p>'+
     '<p style="font-family:Arial,sans-serif;font-size:12px;color:#777">Менеджер свяжется с вами для уточнения заказа.</p>';
 }
@@ -892,107 +815,7 @@ function showToast(msg){
   clearTimeout(toastT); toastT = setTimeout(() => el.classList.remove('show'), 4200);
 }
 
-/* ============================================================
-   ЦЕНЫ ИЗ GOOGLE-ТАБЛИЦЫ (рабочая таблица 1С)
-   ------------------------------------------------------------
-   Сайт читает цены из вашей Google-таблицы по «Коду в 1С».
-   Меняете цену в таблице ОНЛАЙН → на сайте обновляется при
-   следующей загрузке страницы. Ничего перезаливать не нужно.
-
-   Настройки: ID таблицы и имя листа — в двух строках ниже.
-   Требования к таблице:
-     • доступ: «Все, у кого есть ссылка» → «Читатель»
-     • колонка «Код в 1С» (ключ), «Цена руб/упак», «руб/лист», «руб/м²»
-   ============================================================ */
-const SHEET_ID   = "1jQdOs81cq9-Ho3sTGu-kxMiagsOhLEGu_erRwJylKbk";  // ID вашей таблицы
-const SHEET_NAME = "Прайс";     // имя вкладки (листа) в таблице
-
-// Код 1С для каждой позиции — получен сопоставлением по названию. НЕ МЕНЯТЬ.
-const CODE_MAP = {0:"НФ-00000383",1:"НФ-00000410",2:"НФ-00000411",3:"НФ-00000412",4:"НФ-00000413",5:"НФ-00000414",6:"НФ-00000415",7:"00-00001024",8:"00-00001083",9:"00-00001742",10:"НФ-00000417",11:"НФ-00000418",12:"НФ-00000419",13:"НФ-00000416",14:"НФ-00000420",15:"НФ-00000421",16:"НФ-00000422",17:"НФ-00000423",18:"НФ-00000424",19:"НФ-00000425",20:"НФ-00000426",21:"НФ-00000427",22:"НФ-00000428",23:"НФ-00000319",24:"НФ-00000321",25:"НФ-00000318",26:"НФ-00000308",27:"НФ-00000310",28:"НФ-00000309",29:"НФ-00000429",30:"НФ-00000311",31:"НФ-00000312",32:"НФ-00000307",33:"НФ-00000305",34:"НФ-00000306",35:"НФ-00000555",36:"НФ-00000193",37:"НФ-00000195",38:"НФ-00000314",39:"НФ-00000313",46:"НФ-00000317",47:"00-00002893",48:"НФ-00000255",49:"НФ-00000247",50:"НФ-00000250",51:"НФ-00000251",52:"НФ-00000252",53:"НФ-00000142",54:"НФ-00000434",55:"НФ-00000432",56:"00-00000680",57:"00-00000679",58:"00-00000229",59:"00-00000896",60:"НФ-00000209",61:"НФ-00000206",62:"00-00003462",63:"НФ-00000211",64:"00-00000234",65:"00-00003021",66:"00-00002420",67:"00-00000230",68:"00-00000346",69:"00-00004190",70:"00-00000670",71:"00-00003571",72:"НФ-00000664",73:"НФ-00000665",74:"00-00002063",75:"00-00002150",76:"00-00000235",77:"НФ-00000557",78:"00-00004271",79:"НФ-00000435",80:"НФ-00000436",81:"НФ-00000437",82:"НФ-00000438",83:"НФ-00000439",84:"00-00003694",85:"00-00003675",86:"00-00003695",87:"00-00003676",88:"БП-00004473",89:"БП-00004474",90:"БП-00004475",91:"БП-00004476",92:"НФ-00000290",93:"00-00004283",94:"00-00003962",95:"00-00001898",96:"НФ-00000169",97:"НФ-00000440",98:"НФ-00000431",99:"НФ-00000430",100:"НФ-00000136",101:"НФ-00000140",102:"00-00002450",103:"00-00003847",104:"00-00002831",105:"НФ-00000137",106:"НФ-00000138",107:"НФ-00000291",108:"НФ-00000139",109:"00-00003051"};
-PRODUCTS.forEach((p, i) => { p.code = CODE_MAP[i] || null; });
-
-// "2 800 ₽", "13,86", 2800 → число; пусто → null
-function parseNum(v){
-  if(v === null || v === undefined || v === '') return null;
-  if(typeof v === 'number') return v;
-  const s = String(v).replace(/[^\d.,\-]/g,'').replace(/\s+/g,'').replace(',', '.');
-  const n = parseFloat(s);
-  return isNaN(n) ? null : n;
-}
-// Назначение колонки по заголовку (устойчиво к порядку и лишним столбцам)
-function colRole(label){
-  const h = String(label||'').toLowerCase().replace(/ё/g,'е').replace(/[.\s]/g,'');
-  if(h.includes('код') || h.includes('артикул')) return 'code';
-  if(/^(id|ид|№|номер)$/.test(h)) return 'id';
-  if(h.includes('налич') || h.includes('статус')) return 'status';
-  if(h.includes('руб') || h.includes('цена')){        // это ценовая колонка
-    if(h.includes('м²') || h.includes('м2')) return 'm2';
-    if(h.includes('лист') || h.includes('шт'))  return 'sheet';
-    return 'main';
-  }
-  return null;   // "Размер листа", "Упаковка плит", "м²"(объём) и пр. — не цена
-}
-function patchExtra(p, needle, val){
-  (p.extra_rows || []).forEach(row => { if(String(row[0]).includes(needle)) row[1] = val; });
-}
-function applyPriceRow(byKey, map, keyRole, cells){
-  const rawKey = cells[keyRole === 'code' ? map.code : map.id];
-  const key = keyRole === 'code' ? String(rawKey||'').trim() : parseNum(rawKey);
-  if(key === null || key === '' ) return false;
-  const p = byKey[key];
-  if(!p) return false;
-
-  const status = String(cells[map.status] || '').toLowerCase();
-  const hidePrice = status !== '' && /запрос|нет|скрыт/.test(status);
-
-  if('main' in map){
-    const v = parseNum(cells[map.main]);
-    p.price_pack = v;
-    p.display_price = (hidePrice || v === null) ? null : v;
-  } else if(hidePrice){
-    p.display_price = null;
-  }
-  if('sheet' in map){
-    const v = parseNum(cells[map.sheet]);
-    if(v !== null){ p.price_sheet = v; patchExtra(p, 'лист', v); }
-  }
-  if('m2' in map){
-    const v = parseNum(cells[map.m2]);
-    if(v !== null){ p.price_m2 = v; patchExtra(p, 'м²', v); }
-  }
-  return true;
-}
-function loadPricesFromSheet(){
-  if(!SHEET_ID){ return; }
-  // &_=время — сбивает кэш браузера, чтобы всегда брались свежие цены
-  const url = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID +
-              '/gviz/tq?tqx=out:json&headers=2&sheet=' + encodeURIComponent(SHEET_NAME) +
-              '&_=' + Date.now();
-  fetch(url, { cache: 'no-store' })
-    .then(r => r.text())
-    .then(txt => {
-      const json = JSON.parse(txt.substring(txt.indexOf('{'), txt.lastIndexOf('}') + 1));
-      const cols = json.table.cols.map(c => c.label);
-      let rows = json.table.rows.map(r => (r.c || []).map(c => c ? c.v : null));
-      let header = cols, dataRows = rows;
-      if(cols.every(c => !c) && rows.length){ header = rows[0]; dataRows = rows.slice(1); }
-      const map = {};
-      header.forEach((label, i) => { const role = colRole(label); if(role && !(role in map)) map[role] = i; });
-      const keyRole = ('code' in map) ? 'code' : ('id' in map) ? 'id' : null;
-      if(!keyRole){ console.warn('[Прайс] В таблице не найдена колонка «Код в 1С» / id — цены не обновлены. Заголовки:', header); return; }
-      const byKey = {};
-      PRODUCTS.forEach(p => { const k = keyRole === 'code' ? p.code : p.id; if(k) byKey[k] = p; });
-      let n = 0;
-      dataRows.forEach(cells => { if(applyPriceRow(byKey, map, keyRole, cells)) n++; });
-      console.log('[Прайс] Загружено из таблицы. Колонки:', map, '| обновлено позиций:', n);
-      render();
-      showToast(n ? ('Цены из таблицы: ' + n + ' поз.') : 'Таблица прочитана, но совпадений нет');
-    })
-    .catch(err => { console.warn('Не удалось загрузить цены из таблицы, показаны встроенные:', err); });
-}
-
-render();               // мгновенно — на встроенных ценах
-loadPricesFromSheet();  // затем в фоне из таблицы 1С и перерисовка
+render();
 </script>
 </body>
 </html>
