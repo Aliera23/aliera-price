@@ -1,0 +1,39 @@
+name: Update Prices Daily
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-prices:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch prices from Tilda
+        run: python fetch_prices.py
+
+      - name: Check for changes
+        id: check
+        run: |
+          git diff --quiet prices.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit & push if changed
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name "AlieraBot"
+          git config user.email "bot@aliera23.ru"
+          git add prices.json
+          git commit -m "🔄 Обновление цен $(date +'%Y-%m-%d %H:%M') МСК"
+          git push
