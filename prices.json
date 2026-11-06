@@ -1,0 +1,1658 @@
+{
+  "updated_at": "2026-11-06 15:22:28",
+  "timezone": "Europe/Moscow",
+  "currency": "RUB",
+  "source": "https://aliera23.ru/catalog",
+  "total_in_catalog": 195,
+  "total_with_price": 96,
+  "total_no_price": 99,
+  "products": [
+    {
+      "uid": "176679260422",
+      "title": "Пеноплэкс Комфорт 50 мм",
+      "price": 2156.0,
+      "sku": "50-7",
+      "brand": "",
+      "descr": "1 упаковка / 7 плит / 4,85 м2/ 0,24 м3",
+      "url": "https://aliera23.ru/xps/tproduct/176679260422-penopleks-komfort-50-mm",
+      "editions": [
+        {
+          "option": "",
+          "price": 2156.0
+        }
+      ]
+    },
+    {
+      "uid": "910596344552",
+      "title": "Пеноплэкс Комфорт 40 мм",
+      "price": 2380.0,
+      "sku": "40-10",
+      "brand": "ПЕНОПЛЭКС",
+      "descr": "1 упаковка / 10 плит / 6,9 м2/ 0,25 м3",
+      "url": "https://aliera23.ru/xps/tproduct/910596344552-penopleks-komfort-40-mm",
+      "characteristics": {
+        "Плотность (кг/м3)": "21",
+        "Толщина": "40 мм"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 2380.0
+        }
+      ]
+    },
+    {
+      "uid": "334745989572",
+      "title": "Пеноплэкс Комфорт 30 мм",
+      "price": 2195.0,
+      "sku": "30-13",
+      "brand": "ПЕНОПЛЭКС",
+      "descr": "1 упаковка / 13 плит / 9,01 м2/ 0,27 м3",
+      "url": "https://aliera23.ru/xps/tproduct/334745989572-penopleks-komfort-30-mm",
+      "characteristics": {
+        "Плотность (кг/м3)": "21",
+        "Толщина": "30 мм"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 2195.0
+        }
+      ]
+    },
+    {
+      "uid": "180430850512",
+      "title": "Пеноплэкс Комфорт 20 мм",
+      "price": 2500.0,
+      "sku": "20-20",
+      "brand": "ПЕНОПЛЭКС",
+      "descr": "1 упаковка / 20 плит / 13,86 м2/ 0,27 м3",
+      "url": "https://aliera23.ru/xps/tproduct/180430850512-penopleks-komfort-20-mm",
+      "characteristics": {
+        "Плотность (кг/м3)": "21",
+        "Толщина": "20 мм"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 2500.0
+        }
+      ]
+    },
+    {
+      "uid": "971014808922",
+      "title": "Пеноплэкс Комфорт 100 мм",
+      "price": 2240.0,
+      "sku": "100-4",
+      "brand": "ПЕНОПЛЭКС",
+      "descr": "1 упаковка / 4 плиты / 2,77 м2/ 0,27 м3",
+      "url": "https://aliera23.ru/xps/tproduct/971014808922-penopleks-komfort-100-mm",
+      "characteristics": {
+        "Плотность (кг/м3)": "21",
+        "Толщина": "100 мм"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 2240.0
+        }
+      ]
+    },
+    {
+      "uid": "607374508082",
+      "title": "Пеноплэкс Фундамент 50 мм",
+      "price": 2492.0,
+      "sku": "Ф50-7",
+      "brand": "ПЕНОПЛЭКС",
+      "descr": "1 упаковка / 7 плит / 4,85 м2/ 0,24 м3",
+      "url": "https://aliera23.ru/xps/tproduct/607374508082-penopleks-fundament-50-mm",
+      "characteristics": {
+        "Плотность (кг/м3)": "32",
+        "Толщина": "50 мм"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 2492.0
+        }
+      ]
+    },
+    {
+      "uid": "662683753542",
+      "title": "Пеноплэкс Стена 50 мм",
+      "price": 2240.0,
+      "sku": "СТ-50",
+      "brand": "ПЕНОПЛЭКС",
+      "descr": "1 упаковка / 7 плит / 4,85 м2/ 0,24 м3",
+      "url": "https://aliera23.ru/xps/tproduct/662683753542-penopleks-stena-50-mm",
+      "characteristics": {
+        "Плотность (кг/м3)": "21",
+        "Толщина": "50 мм"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 2240.0
+        }
+      ]
+    },
+    {
+      "uid": "672770943842",
+      "title": "Утеплитель Технониколь 34 PN СТЕНЫ И КРЫШИ 50 мм",
+      "price": 740.0,
+      "sku": "СТК50",
+      "brand": "",
+      "descr": "1 уп / 8 плит / 0,244 м3 /4,88 м2",
+      "url": "https://aliera23.ru/minvata/tproduct/672770943842-uteplitel-tehnonikol-34-pn-steni-i-krish",
+      "old_price": 960.0,
+      "editions": [
+        {
+          "option": "",
+          "price": 740.0
+        }
+      ]
+    },
+    {
+      "uid": "739123648062",
+      "title": "Утеплитель Технониколь 34 PN СТЕНЫ И КРЫШИ 100 мм",
+      "price": 740.0,
+      "sku": "СТК100",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 уп - 4 плиты / 2,44м2 / пл. 22,25 кг/м3",
+      "url": "https://aliera23.ru/minvata/tproduct/739123648062-uteplitel-tehnonikol-34-pn-steni-i-krish",
+      "characteristics": {
+        "Толщина": "50 мм",
+        "Плотность (кг/м3)": "22,25"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 740.0
+        }
+      ]
+    },
+    {
+      "uid": "986998460562",
+      "title": "Утеплитель Технониколь 40 RN СТАНДАРТ 50 мм",
+      "price": 1300.0,
+      "sku": "ТС2-50",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 рулон / 2 слоя/ 0,750 м3 /15,06 м2",
+      "url": "https://aliera23.ru/minvata/tproduct/986998460562-uteplitel-tehnonikol-40-rn-standart-50-m",
+      "characteristics": {
+        "Толщина": "50 мм",
+        "Плотность (кг/м3)": "11,5"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 1300.0
+        }
+      ]
+    },
+    {
+      "uid": "699113186882",
+      "title": "Утеплитель Технониколь РОКЛАЙТ 50 мм",
+      "price": 940.0,
+      "sku": "Р50",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 упаковка / 8 плит / 0,288 м3 /5,76 м2",
+      "url": "https://aliera23.ru/minvata/tproduct/699113186882-uteplitel-tehnonikol-roklait-50-mm",
+      "characteristics": {
+        "Толщина": "50 мм",
+        "Плотность (кг/м3)": "35"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 940.0
+        }
+      ]
+    },
+    {
+      "uid": "319183584712",
+      "title": "Утеплитель Технониколь ТЕХНОБЛОК СТАНДАРТ 50 мм",
+      "price": 1350.0,
+      "sku": "ТБ8",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 упаковка / 8 плит / 0,288 м3 /5,76 м2",
+      "url": "https://aliera23.ru/minvata/tproduct/319183584712-uteplitel-tehnonikol-tehnoblok-standart",
+      "characteristics": {
+        "Толщина": "50 мм",
+        "Плотность (кг/м3)": "45"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 1350.0
+        }
+      ]
+    },
+    {
+      "uid": "331089738182",
+      "title": "Утеплитель Технониколь ТЕХНОБЛОК СТАНДАРТ 100 мм",
+      "price": 1350.0,
+      "sku": "ТБ100",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 упаковка / 4 плиты / 0,288 м3 /2,88 м2",
+      "url": "https://aliera23.ru/minvata/tproduct/331089738182-uteplitel-tehnonikol-tehnoblok-standart",
+      "characteristics": {
+        "Толщина": "100 мм",
+        "Плотность (кг/м3)": "45"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 1350.0
+        }
+      ]
+    },
+    {
+      "uid": "869034654742",
+      "title": "Утеплитель Технониколь ТЕХНОФАС 80 мм 145 кг/м3",
+      "price": 3040.0,
+      "sku": "ТЕХНОФАС",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 упаковка / 3 плиты / 0,1728 м3 /2,16 м2",
+      "url": "https://aliera23.ru/minvata/tproduct/869034654742-uteplitel-tehnonikol-tehnofas-80-mm-145",
+      "characteristics": {
+        "Толщина": "80 мм",
+        "Плотность (кг/м3)": "145"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 3040.0
+        }
+      ]
+    },
+    {
+      "uid": "741240855212",
+      "title": "Утеплитель Технониколь ИЗОВОЛ (IZOVOL) Л-35 50 мм",
+      "price": 1100.0,
+      "sku": "ИЛ35",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 упаковка / 8 плит / 0,288 м3 /5,76 м2",
+      "url": "https://aliera23.ru/minvata/tproduct/741240855212-uteplitel-tehnonikol-izovol-izovol-l-35",
+      "characteristics": {
+        "Толщина": "50 мм",
+        "Плотность (кг/м3)": "35"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 1100.0
+        }
+      ]
+    },
+    {
+      "uid": "835361767402",
+      "title": "Утеплитель Технониколь ИЗОВОЛ (IZOVOL) CТ-50 50 мм",
+      "price": 1370.0,
+      "sku": "ИСТ50",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 упаковка / 8 плит / 0,29 м3 /5,76 м2",
+      "url": "https://aliera23.ru/minvata/tproduct/835361767402-uteplitel-tehnonikol-izovol-izovol-ct-50",
+      "characteristics": {
+        "Толщина": "50 мм",
+        "Плотность (кг/м3)": "50"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 1370.0
+        }
+      ]
+    },
+    {
+      "uid": "321567342232",
+      "title": "Утеплитель ИЗОРОК (IZOROC) ПП-80 50 мм",
+      "price": 1450.0,
+      "sku": "ПП80",
+      "brand": "ISOROC",
+      "descr": "1 упаковка / 6 плит / 0,18 м3 /3,6 м2",
+      "url": "https://aliera23.ru/minvata/tproduct/321567342232-uteplitel-izorok-izoroc-pp-80-50-mm",
+      "old_price": 1680.0,
+      "characteristics": {
+        "Толщина": "50 мм",
+        "Плотность (кг/м3)": "80"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 1450.0
+        }
+      ]
+    },
+    {
+      "uid": "304670057832",
+      "title": "Утеплитель Технониколь РОКЛАЙТ 100 мм",
+      "price": 990.0,
+      "sku": "Р100-4",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 упаковка / 4 плиты / 0,288 м3 /2,88 м2",
+      "url": "https://aliera23.ru/minvata/tproduct/304670057832-uteplitel-tehnonikol-roklait-100-mm",
+      "editions": [
+        {
+          "option": "",
+          "price": 990.0
+        }
+      ]
+    },
+    {
+      "uid": "417408372922",
+      "title": "Утеплитель ИЗОРОК (IZOROC) ПП-80 100 мм",
+      "price": 1450.0,
+      "sku": "ПП80-100",
+      "brand": "ISOROC",
+      "descr": "1 уп. / 3 ПЛИТЫ / 1,8 м2 / 0,18 м3 / 80 плотность",
+      "url": "https://aliera23.ru/minvata/tproduct/417408372922-uteplitel-izorok-izoroc-pp-80-100-mm",
+      "characteristics": {
+        "Толщина": "100 мм",
+        "Плотность (кг/м3)": "80"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 1450.0
+        }
+      ]
+    },
+    {
+      "uid": "454726828602",
+      "title": "Утеплитель ИЗОРОК (IZOROC) ИЗОФАС-СЛ 50 мм",
+      "price": 2100.0,
+      "sku": "СЛ50",
+      "brand": "ISOROC",
+      "descr": "1 упаковка / 6 плит / 0,18 м3 /3,6 м2",
+      "url": "https://aliera23.ru/minvata/tproduct/454726828602-uteplitel-izorok-izoroc-izofas-sl-50-mm",
+      "characteristics": {
+        "Толщина": "50 мм",
+        "Плотность (кг/м3)": "120"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 2100.0
+        }
+      ]
+    },
+    {
+      "uid": "389574462652",
+      "title": "Утеплитель ИЗОРОК (ISOROC) ИЗОФАС-СЛ 100 мм",
+      "price": 2100.0,
+      "sku": "СЛ100",
+      "brand": "ISOROC",
+      "descr": "1 уп. - 3 ПЛИТЫ / 1,8 м2 / 0,18 м3 / 120 плотность",
+      "url": "https://aliera23.ru/minvata/tproduct/389574462652-uteplitel-izorok-isoroc-izofas-sl-100-mm",
+      "old_price": 2490.0,
+      "editions": [
+        {
+          "option": "",
+          "price": 2100.0
+        }
+      ]
+    },
+    {
+      "uid": "165770052222",
+      "title": "Утеплитель НЕМАН М11 ЛАЙТ 50 мм",
+      "price": 1100.0,
+      "sku": "Неман-1",
+      "brand": "НЕМАН",
+      "descr": "1 рулон / 2 слоя/ 0,750 м3 /15 м2",
+      "url": "https://aliera23.ru/minvata/tproduct/165770052222-uteplitel-neman-m11-lait-50-mm",
+      "characteristics": {
+        "Толщина": "50 мм",
+        "Плотность (кг/м3)": "11"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 1100.0
+        }
+      ]
+    },
+    {
+      "uid": "401738533582",
+      "title": "Утеплитель Технониколь 37 PN ТЕПЛЫЙ КАРКАС 50 мм",
+      "price": 910.0,
+      "sku": "КРКС-50",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 уп / 10 плит / 0,366 м3 / 7,32 м2",
+      "url": "https://aliera23.ru/minvata/tproduct/401738533582-uteplitel-tehnonikol-37-pn-teplii-karkas",
+      "characteristics": {
+        "Толщина": "50 мм",
+        "Плотность (кг/м3)": "15,75"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 910.0
+        }
+      ]
+    },
+    {
+      "uid": "645160376522",
+      "title": "Утеплитель Технониколь 37 PN ТЕПЛЫЙ КАРКАС 100 мм",
+      "price": 910.0,
+      "sku": "КРКС-100",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 уп / 5 плит / 0,366 м3 / 3,66 м2",
+      "url": "https://aliera23.ru/minvata/tproduct/645160376522-uteplitel-tehnonikol-37-pn-teplii-karkas",
+      "characteristics": {
+        "Толщина": "100 мм",
+        "Плотность (кг/м3)": "15,75"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 910.0
+        }
+      ]
+    },
+    {
+      "uid": "446821933042",
+      "title": "Технониколь Техноплекс 50 мм",
+      "price": 2060.0,
+      "sku": "ТЕХ50-8",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 уп / 8 плит / 0,27 м3 / 5,44 м2",
+      "url": "https://aliera23.ru/xps/tproduct/446821933042-tehnonikol-tehnopleks-50-mm",
+      "old_price": 2280.0,
+      "editions": [
+        {
+          "option": "",
+          "price": 2060.0
+        }
+      ]
+    },
+    {
+      "uid": "529604153042",
+      "title": "Технониколь Техноплекс 30 мм",
+      "price": 2070.0,
+      "sku": "ТЕХ30-13",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 уп / 13 плит / 0,27 м3 / 8,84 м2",
+      "url": "https://aliera23.ru/xps/tproduct/529604153042-tehnonikol-tehnopleks-30-mm",
+      "old_price": 2260.0,
+      "characteristics": {
+        "Плотность (кг/м3)": "21",
+        "Толщина": "30 мм"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 2070.0
+        }
+      ]
+    },
+    {
+      "uid": "640401100982",
+      "title": "Технониколь Техноплекс 20 мм",
+      "price": 2400.0,
+      "sku": "ТЕХ20-20",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 уп / 20 плит / 0,29 м3 / 13,6 м2",
+      "url": "https://aliera23.ru/xps/tproduct/640401100982-tehnonikol-tehnopleks-20-mm",
+      "old_price": 2640.0,
+      "characteristics": {
+        "Плотность (кг/м3)": "21",
+        "Толщина": "20 мм"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 2400.0
+        }
+      ]
+    },
+    {
+      "uid": "338428739902",
+      "title": "Технониколь Техноплекс 40 мм",
+      "price": 2280.0,
+      "sku": "ТЕХ40-10",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 уп / 10 плит / 0,27 м3 / 6,8 м2",
+      "url": "https://aliera23.ru/xps/tproduct/338428739902-tehnonikol-tehnopleks-40-mm",
+      "old_price": 2560.0,
+      "characteristics": {
+        "Плотность (кг/м3)": "21",
+        "Толщина": "40 мм"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 2280.0
+        }
+      ]
+    },
+    {
+      "uid": "351139693692",
+      "title": "Технониколь Техноплекс 100 мм",
+      "price": 2170.0,
+      "sku": "ТЕХ100-4",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 уп / 4 плиты / 0,27 м3 / 2,72 м2",
+      "url": "https://aliera23.ru/xps/tproduct/351139693692-tehnonikol-tehnopleks-100-mm",
+      "old_price": 2490.0,
+      "characteristics": {
+        "Плотность (кг/м3)": "21",
+        "Толщина": "100 мм"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 2170.0
+        }
+      ]
+    },
+    {
+      "uid": "403704863262",
+      "title": "Технониколь Техноплекс Фундамент 50 мм",
+      "price": 2380.0,
+      "sku": "ТФ50-8",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 уп / 8 плит / 0,27 м3 / 5,47 м2",
+      "url": "https://aliera23.ru/xps/tproduct/403704863262-tehnonikol-tehnopleks-fundament-50-mm",
+      "old_price": 2670.0,
+      "characteristics": {
+        "Плотность (кг/м3)": "29-33",
+        "Толщина": "50 мм"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 2380.0
+        }
+      ]
+    },
+    {
+      "uid": "472492763772",
+      "title": "Технониколь Техноплекс FAS 50 мм",
+      "price": 2160.0,
+      "sku": "ТЕХФАС50-8",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 уп / 8 плит / 0,27 м3 / 5,47 м2",
+      "url": "https://aliera23.ru/xps/tproduct/472492763772-tehnonikol-tehnopleks-fas-50-mm",
+      "old_price": 2330.0,
+      "characteristics": {
+        "Плотность (кг/м3)": "21",
+        "Толщина": "50 мм"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 2160.0
+        }
+      ]
+    },
+    {
+      "uid": "375776094822",
+      "title": "Гипсокартон Хабез ГКЛВ 9,5 мм 1200х2500 мм влагостойкий",
+      "price": 446.0,
+      "sku": "ГКЛВ9,5",
+      "brand": "HABEZ",
+      "descr": "1 лист / 2500 мм/ 1200 мм/ 9,5 мм / 63 листа на паллете",
+      "url": "https://aliera23.ru/gkl/tproduct/375776094822-gipsokarton-habez-gklv-95-mm-1200h2500-m",
+      "editions": [
+        {
+          "option": "",
+          "price": 446.0
+        }
+      ]
+    },
+    {
+      "uid": "917550773822",
+      "title": "Гипсокартон Хабез ГКЛ 9,5 мм 1200х2500 мм",
+      "price": 353.0,
+      "sku": "ГКЛ9,5",
+      "brand": "HABEZ",
+      "descr": "1 лист / 2500 мм/ 1200 мм/ 9,5 мм / 63 листа на паллете",
+      "url": "https://aliera23.ru/gkl/tproduct/917550773822-gipsokarton-habez-gkl-95-mm-1200h2500-mm",
+      "editions": [
+        {
+          "option": "",
+          "price": 353.0
+        }
+      ]
+    },
+    {
+      "uid": "427081924722",
+      "title": "Гипсокартон Хабез ГКЛВ 12,5 мм 1200х2500 мм влагостойкий",
+      "price": 485.0,
+      "sku": "ГКЛВ12,5",
+      "brand": "HABEZ",
+      "descr": "1 лист / 2500 мм/ 1200 мм/ 12,5 мм / 51 лист на паллете",
+      "url": "https://aliera23.ru/gkl/tproduct/427081924722-gipsokarton-habez-gklv-125-mm-1200h2500",
+      "editions": [
+        {
+          "option": "",
+          "price": 485.0
+        }
+      ]
+    },
+    {
+      "uid": "617502333502",
+      "title": "Гипсокартон Хабез ГКЛ 12,5 мм 1200х2500 мм",
+      "price": 406.0,
+      "sku": "ГКЛ12,5",
+      "brand": "HABEZ",
+      "descr": "1 лист / 2500 мм/ 1200 мм/ 12,5 мм / 51 лист на паллете",
+      "url": "https://aliera23.ru/gkl/tproduct/617502333502-gipsokarton-habez-gkl-125-mm-1200h2500-m",
+      "editions": [
+        {
+          "option": "",
+          "price": 406.0
+        }
+      ]
+    },
+    {
+      "uid": "448715123552",
+      "title": "Плита OSB Влагостойкая (Ultraply) 9*2440*1220 мм (1/96шт)",
+      "price": 670.0,
+      "sku": "ОСБ-У-9",
+      "brand": "Ultraply",
+      "descr": "1 лист /2440 мм /1220 мм/ 2,98 м2",
+      "url": "https://aliera23.ru/osb/tproduct/448715123552-plita-osb-vlagostoikaya-ultraply-9244012",
+      "editions": [
+        {
+          "option": "",
+          "price": 670.0
+        }
+      ]
+    },
+    {
+      "uid": "722651836992",
+      "title": "Плита OSB Влагостойкая (Ultraply) 12*2440*1220 мм (1/72шт)",
+      "price": 850.0,
+      "sku": "ОСБ-У-12",
+      "brand": "Ultraply",
+      "descr": "1 лист /2440 мм /1220 мм/ 2,98 м2",
+      "url": "https://aliera23.ru/osb/tproduct/722651836992-plita-osb-vlagostoikaya-ultraply-1224401",
+      "editions": [
+        {
+          "option": "",
+          "price": 850.0
+        }
+      ]
+    },
+    {
+      "uid": "904651975232",
+      "title": "Плита OSB Влагостойкая (Ultraply) 15*2440*1220 мм (1/58шт)",
+      "price": 1050.0,
+      "sku": "ОСБ-У-15",
+      "brand": "Ultraply",
+      "descr": "1 лист /2440 мм /1220 мм/ 2,98 м2",
+      "url": "https://aliera23.ru/osb/tproduct/904651975232-plita-osb-vlagostoikaya-ultraply-1524401",
+      "editions": [
+        {
+          "option": "",
+          "price": 1050.0
+        }
+      ]
+    },
+    {
+      "uid": "866584489772",
+      "title": "Плита OSB Влагостойкая (Ultraply) 22*2440*1220 мм (1/40шт)",
+      "price": 1650.0,
+      "sku": "ОСБ-У-21",
+      "brand": "Ultraply",
+      "descr": "1 лист /2440 мм /1220 мм/ 2,98 м2",
+      "url": "https://aliera23.ru/osb/tproduct/866584489772-plita-osb-vlagostoikaya-ultraply-2224401",
+      "editions": [
+        {
+          "option": "",
+          "price": 1650.0
+        }
+      ]
+    },
+    {
+      "uid": "833592709852",
+      "title": "Плита OSB Влагостойкая (Ultraply) 18*2440*1220 мм (1/48шт)",
+      "price": 1300.0,
+      "sku": "ОСБ-У-18",
+      "brand": "Ultraply",
+      "descr": "1 лист /2440 мм /1220 мм/ 2,98 м2",
+      "url": "https://aliera23.ru/osb/tproduct/833592709852-plita-osb-vlagostoikaya-ultraply-1824401",
+      "editions": [
+        {
+          "option": "",
+          "price": 1300.0
+        }
+      ]
+    },
+    {
+      "uid": "270701340782",
+      "title": "Клей-пена Пеноплэкс FASTFIX PRO",
+      "price": 600.0,
+      "sku": "FASTFIX PRO",
+      "brand": "ПЕНОПЛЭКС",
+      "descr": "1",
+      "url": "https://aliera23.ru/catalog/tproduct/270701340782-klei-pena-penopleks-fastfix-pro",
+      "editions": [
+        {
+          "option": "",
+          "price": 600.0
+        }
+      ]
+    },
+    {
+      "uid": "324531442952",
+      "title": "Клей-пена ТЕХНОНИКОЛЬ PROFESSIONAL для пенополистирола",
+      "price": 600.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/324531442952-klei-pena-tehnonikol-professional-dlya-p",
+      "editions": [
+        {
+          "option": "",
+          "price": 600.0
+        }
+      ]
+    },
+    {
+      "uid": "658123467892",
+      "title": "Утеплитель фольгированный LOGICPIR Балкон 30 мм Технониколь",
+      "price": 4715.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 уп/ 8 плит / 5.61 м2",
+      "url": "https://aliera23.ru/catalog/tproduct/658123467892-uteplitel-folgirovannii-logicpir-balkon",
+      "characteristics": {
+        "Толщина": "30 мм"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 4715.0
+        }
+      ]
+    },
+    {
+      "uid": "468652893332",
+      "title": "Утеплитель фольгированный LOGICPIR Баня 30мм Технониколь",
+      "price": 4860.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 упаковка / 8 плит / 5,62 м2",
+      "url": "https://aliera23.ru/catalog/tproduct/468652893332-uteplitel-folgirovannii-logicpir-banya-3",
+      "characteristics": {
+        "Толщина": "30 мм"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 4860.0
+        }
+      ]
+    },
+    {
+      "uid": "287297998372",
+      "title": "Утеплитель фольгированный LOGICPIR Баня 50 мм ТЕХНОНИКОЛЬ",
+      "price": 4250.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 упаковка / 5 плит / 3,511 м2 / 0,18 м3",
+      "url": "https://aliera23.ru/catalog/tproduct/287297998372-uteplitel-folgirovannii-logicpir-banya-5",
+      "characteristics": {
+        "Толщина": "50 мм"
+      },
+      "editions": [
+        {
+          "option": "",
+          "price": 4250.0
+        }
+      ]
+    },
+    {
+      "uid": "784637503182",
+      "title": "Пароизоляция Технониколь ISOBOX \"B\"",
+      "price": 1800.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 рулон (1,6м*43,75м) / 70 м2",
+      "url": "https://aliera23.ru/catalog/tproduct/784637503182-paroizolyatsiya-tehnonikol-isobox-b",
+      "editions": [
+        {
+          "option": "",
+          "price": 1800.0
+        }
+      ]
+    },
+    {
+      "uid": "411978035012",
+      "title": "Ветро-влагозащитная пленка Технониколь ISOBOX \"A\"",
+      "price": 2660.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 рулон (1,6м*43,75м) / 70 м2",
+      "url": "https://aliera23.ru/catalog/tproduct/411978035012-vetro-vlagozaschitnaya-plenka-tehnonikol",
+      "editions": [
+        {
+          "option": "",
+          "price": 2660.0
+        }
+      ]
+    },
+    {
+      "uid": "210956299332",
+      "title": "Пароизоляция Технониколь ISOBOX \"D\"",
+      "price": 2200.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 рулон (1,5м*46,6 м) / 70 м2",
+      "url": "https://aliera23.ru/catalog/tproduct/210956299332-paroizolyatsiya-tehnonikol-isobox-d",
+      "editions": [
+        {
+          "option": "",
+          "price": 2200.0
+        }
+      ]
+    },
+    {
+      "uid": "141042760612",
+      "title": "Дюбель фасадный TERMOCLIP Стена 1MT 180 мм, (уп. 100 шт)",
+      "price": 1500.0,
+      "sku": "",
+      "brand": "TERMOCLIP",
+      "descr": "Тарельчатый термодюбель TERMOCLIP Стена 1MT 180 мм для крепления утеплителя толщиной 130–145 мм к бетону, кирпичу и газобетону. Шляпка 60 мм, 100 шт. в упаковке. Доставка по Краснодарскому краю.",
+      "url": "https://aliera23.ru/catalog/tproduct/141042760612-dyubel-fasadnii-termoclip-stena-1mt-180",
+      "editions": [
+        {
+          "option": "",
+          "price": 1500.0
+        }
+      ]
+    },
+    {
+      "uid": "664599907292",
+      "title": "Дюбель фасадный TERMOCLIP Стена 1MT 160 мм, (уп. 100 шт)",
+      "price": 1400.0,
+      "sku": "",
+      "brand": "TERMOCLIP",
+      "descr": "Тарельчатый термодюбель TERMOCLIP Стена 1MT 160 мм для крепления утеплителя толщиной 110–125 мм к бетону, кирпичу и газобетону. Шляпка 60 мм, 100 шт. в упаковке. Доставка по Краснодарскому краю.",
+      "url": "https://aliera23.ru/catalog/tproduct/664599907292-dyubel-fasadnii-termoclip-stena-1mt-160",
+      "editions": [
+        {
+          "option": "",
+          "price": 1400.0
+        }
+      ]
+    },
+    {
+      "uid": "190322810092",
+      "title": "Дюбель фасадный TERMOCLIP Стена 1MT 140 мм, (уп. 100 шт)",
+      "price": 1300.0,
+      "sku": "",
+      "brand": "TERMOCLIP",
+      "descr": "Тарельчатый термодюбель TERMOCLIP Стена 1MT 140 мм для крепления утеплителя толщиной 90–105 мм к бетону, кирпичу и газобетону. Шляпка 60 мм.<br />Доставка по Краснодарскому краю.",
+      "url": "https://aliera23.ru/catalog/tproduct/190322810092-dyubel-fasadnii-termoclip-stena-1mt-140",
+      "editions": [
+        {
+          "option": "",
+          "price": 1300.0
+        }
+      ]
+    },
+    {
+      "uid": "185157997512",
+      "title": "Дюбель фасадный TERMOCLIP Стена 1MT 100 мм, (уп. 100 шт)",
+      "price": 1100.0,
+      "sku": "",
+      "brand": "TERMOCLIP",
+      "descr": "Тарельчатый термодюбель TERMOCLIP Стена 1MT 100 мм для крепления утеплителя толщиной 50–65 мм к бетону, кирпичу и газобетону. Шляпка 60 мм, 100 шт. в упаковке. Доставка по Краснодарскому краю.",
+      "url": "https://aliera23.ru/catalog/tproduct/185157997512-dyubel-fasadnii-termoclip-stena-1mt-100",
+      "editions": [
+        {
+          "option": "",
+          "price": 1100.0
+        }
+      ]
+    },
+    {
+      "uid": "103235771412",
+      "title": "Дюбель фасадный TERMOCLIP Стена 1MT 120 мм, (уп. 100 шт)",
+      "price": 1200.0,
+      "sku": "",
+      "brand": "TERMOCLIP",
+      "descr": "Тарельчатый термодюбель TERMOCLIP Стена 1MT 100 мм для крепления утеплителя толщиной 70–90 мм к бетону, кирпичу и газобетону. Шляпка 60 мм, 410 шт. в упаковке. Доставка по Краснодарскому краю.",
+      "url": "https://aliera23.ru/catalog/tproduct/103235771412-dyubel-fasadnii-termoclip-stena-1mt-120",
+      "editions": [
+        {
+          "option": "",
+          "price": 1200.0
+        }
+      ]
+    },
+    {
+      "uid": "105496072132",
+      "title": "Клей \"СУХОВ ТЕПЛОФАСАД\" для теплоизоляции 25кг",
+      "price": 465.0,
+      "sku": "",
+      "brand": "СУХОВ",
+      "descr": "1 мешок/ 25 кг",
+      "url": "https://aliera23.ru/catalog/tproduct/105496072132-klei-suhov-teplofasad-dlya-teploizolyats",
+      "editions": [
+        {
+          "option": "",
+          "price": 465.0
+        }
+      ]
+    },
+    {
+      "uid": "907058594912",
+      "title": "Геотекстиль ТЕХНОНИКОЛЬ ГЕО 150 (75м2) 1,5*50м",
+      "price": 2818.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 рулон / 1,5х50 м / 75 м2 / плотность 150 г/м2",
+      "url": "https://aliera23.ru/catalog/tproduct/907058594912-geotekstil-tehnonikol-geo-150-75m2-1550m",
+      "editions": [
+        {
+          "option": "",
+          "price": 2818.0
+        }
+      ]
+    },
+    {
+      "uid": "110391541132",
+      "title": "Геотекстиль ТЕХНОНИКОЛЬ ГЕО 300 (45м2) 1,5*30м",
+      "price": 3019.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 рулон / 1,5х30 м / 45 м2/ плотность 300 г/м2",
+      "url": "https://aliera23.ru/catalog/tproduct/110391541132-geotekstil-tehnonikol-geo-300-45m2-1530m",
+      "editions": [
+        {
+          "option": "",
+          "price": 3019.0
+        }
+      ]
+    },
+    {
+      "uid": "738772054702",
+      "title": "Подкладочный ковер ТЕХНОНИКОЛЬ АЛЬФА ANDEREP",
+      "price": 4018.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 рулон / 70 м2 / 1,5 м х 50 м",
+      "url": "https://aliera23.ru/catalog/tproduct/738772054702-podkladochnii-kover-tehnonikol-alfa-ande",
+      "editions": [
+        {
+          "option": "",
+          "price": 4018.0
+        }
+      ]
+    },
+    {
+      "uid": "113995237132",
+      "title": "Подкладочный ковер ANDEREP NEXT FIX ТЕХНОНИКОЛЬ",
+      "price": 4502.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 рулон / 33 м2 / 1,5 м х 30 м",
+      "url": "https://aliera23.ru/catalog/tproduct/113995237132-podkladochnii-kover-anderep-next-fix-teh",
+      "editions": [
+        {
+          "option": "",
+          "price": 4502.0
+        }
+      ]
+    },
+    {
+      "uid": "180574652072",
+      "title": "Подкладочный ковер ANDEREP NEXT SELF (25м2) ТЕХНОНИКОЛЬ",
+      "price": 5010.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/180574652072-podkladochnii-kover-anderep-next-self-25",
+      "editions": [
+        {
+          "option": "",
+          "price": 5010.0
+        }
+      ]
+    },
+    {
+      "uid": "660253422482",
+      "title": "Подкладочный ковер ANDEREP PROF 500 (40м2) ТЕХНОНИКОЛЬ",
+      "price": 6036.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 рулон / 40 м2",
+      "url": "https://aliera23.ru/catalog/tproduct/660253422482-podkladochnii-kover-anderep-prof-500-40m",
+      "editions": [
+        {
+          "option": "",
+          "price": 6036.0
+        }
+      ]
+    },
+    {
+      "uid": "636531382092",
+      "title": "ЦСП ТАМАК 1250×2700 мм толщиной 8, 10, 12, 20 мм — купить в Краснодаре с доставкой",
+      "price": 2237.0,
+      "sku": "",
+      "brand": "ТАМАК",
+      "descr": "Цементно-стружечная плита ТАМАК 1250×2700 мм, толщина 8, 10, 12 и 20 мм, цена от 2 237 ₽. Влагостойкая, биостойкая, без формальдегида. Для фасадов, полов, перегородок и кровли. Доставка по Краснодару и краю.",
+      "url": "https://aliera23.ru/catalog/tproduct/636531382092-tssp-tamak-12502700-mm-tolschinoi-8-10-1",
+      "editions": [
+        {
+          "option": "",
+          "price": 2237.0
+        },
+        {
+          "option": "",
+          "price": 4111.0
+        },
+        {
+          "option": "",
+          "price": 2788.0
+        },
+        {
+          "option": "",
+          "price": 2545.0
+        }
+      ]
+    },
+    {
+      "uid": "660665243552",
+      "title": "ЦСП ТАМАК 1250×3200 мм толщиной 10, 12, 16, 20 мм — купить в Краснодаре с доставкой",
+      "price": 2620.0,
+      "sku": "",
+      "brand": "ТАМАК",
+      "descr": "Цементно-стружечная плита ТАМАК увеличенного формата 1250×3200 мм, толщина 10, 12, 16 и 20 мм, цена от 2 620 ₽. Меньше стыков при обшивке стен и перекрытий. Влагостойкая, биостойкая. Доставка по Краснодару и краю.",
+      "url": "https://aliera23.ru/catalog/tproduct/660665243552-tssp-tamak-12503200-mm-tolschinoi-10-12",
+      "editions": [
+        {
+          "option": "",
+          "price": 2620.0
+        },
+        {
+          "option": "",
+          "price": 2788.0
+        },
+        {
+          "option": "",
+          "price": 3455.0
+        },
+        {
+          "option": "",
+          "price": 3960.0
+        }
+      ]
+    },
+    {
+      "uid": "691291509822",
+      "title": "Гидро-пароизоляционная пленка универсальная высокой прочности D Kolotek 70 м2",
+      "price": 1420.0,
+      "sku": "",
+      "brand": "KOLOTEK",
+      "descr": "1 рулон / 1,5 х 46,6 м / 70 м2",
+      "url": "https://aliera23.ru/catalog/tproduct/691291509822-gidro-paroizolyatsionnaya-plenka-univers",
+      "editions": [
+        {
+          "option": "",
+          "price": 1420.0
+        }
+      ]
+    },
+    {
+      "uid": "909941921592",
+      "title": "Пароизоляционная пленка B Kolotek 70 м2",
+      "price": 960.0,
+      "sku": "",
+      "brand": "KOLOTEK",
+      "descr": "1 рулон / 1,6 х 43,75 м / 70 м2",
+      "url": "https://aliera23.ru/catalog/tproduct/909941921592-paroizolyatsionnaya-plenka-b-kolotek-70",
+      "editions": [
+        {
+          "option": "",
+          "price": 960.0
+        }
+      ]
+    },
+    {
+      "uid": "261081995032",
+      "title": "Сетка стеклотканевая фасадная POLINET 5×5 мм, 160 г/м², рулон 1×20 м — купить в Краснодаре",
+      "price": 1724.0,
+      "sku": "",
+      "brand": "POLINET",
+      "descr": "Фасадная стеклосетка POLINET 5×5 мм, 160 г/м², рулон 1×20 м (20 м²). Щелочестойкая, для армирования штукатурки и СФТК, защищает от трещин. Доставка по Краснодару и краю, опт и розница.",
+      "url": "https://aliera23.ru/catalog/tproduct/261081995032-setka-steklotkanevaya-fasadnaya-polinet",
+      "editions": [
+        {
+          "option": "",
+          "price": 1724.0
+        }
+      ]
+    },
+    {
+      "uid": "873147241662",
+      "title": "Сетка стеклотканевая фасадная POLINET 5×5 мм, 160 г/м², рулон 1×50 м — купить в Краснодаре",
+      "price": 2463.0,
+      "sku": "",
+      "brand": "POLINET",
+      "descr": "Фасадная стеклосетка POLINET 5×5 мм, 160 г/м², большой рулон 1×50 м (50 м²) — выгодно для фасадных работ на объекте. Щелочестойкая, для штукатурки и СФТК. Доставка по Краснодару и краю.",
+      "url": "https://aliera23.ru/catalog/tproduct/873147241662-setka-steklotkanevaya-fasadnaya-polinet",
+      "editions": [
+        {
+          "option": "",
+          "price": 2463.0
+        }
+      ]
+    },
+    {
+      "uid": "537666672262",
+      "title": "Сетка базальтовая кладочная FASADPRO 25х25 мм, 0,25х50 м, 50/50 кН/м",
+      "price": 900.0,
+      "sku": "",
+      "brand": "",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/537666672262-setka-bazaltovaya-kladochnaya-fasadpro-2",
+      "editions": [
+        {
+          "option": "",
+          "price": 900.0
+        }
+      ]
+    },
+    {
+      "uid": "543488888522",
+      "title": "Сетка фасадная X-GLASS PRO 5х5 (160 гр/м2) 1х50м синяя",
+      "price": 2300.0,
+      "sku": "",
+      "brand": "",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/543488888522-setka-fasadnaya-x-glass-pro-5h5-160-grm2",
+      "editions": [
+        {
+          "option": "",
+          "price": 2300.0
+        }
+      ]
+    },
+    {
+      "uid": "345537466432",
+      "title": "Сетка стеклотканевая фасадная яч. 5х5 160гр/м2 (1х50м) Суффикс, синяя",
+      "price": 1490.0,
+      "sku": "",
+      "brand": "СУФФИКС ТМ",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/345537466432-setka-steklotkanevaya-fasadnaya-yach-5h5",
+      "editions": [
+        {
+          "option": "",
+          "price": 1490.0
+        }
+      ]
+    },
+    {
+      "uid": "386100169762",
+      "title": "Сетка стеклотканевая фасадная яч. 5х5 145гр/м2 (1х50м) Суффикс, желтая",
+      "price": 1280.0,
+      "sku": "",
+      "brand": "СУФФИКС ТМ",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/386100169762-setka-steklotkanevaya-fasadnaya-yach-5h5",
+      "editions": [
+        {
+          "option": "",
+          "price": 1280.0
+        }
+      ]
+    },
+    {
+      "uid": "111499513852",
+      "title": "Труба ПВХ 16х2,0 мм Valtec PEX (200 м)",
+      "price": 65.0,
+      "sku": "",
+      "brand": "Valtec",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/111499513852-truba-pvh-16h20-mm-valtec-pex-200-m",
+      "editions": [
+        {
+          "option": "",
+          "price": 65.0
+        }
+      ]
+    },
+    {
+      "uid": "853545018762",
+      "title": "Подложка отражающая металлизированная Энергоизол 10 мм, 1,2 х 15 м",
+      "price": 1300.0,
+      "sku": "",
+      "brand": "ЭНЕРГОИЗОЛ",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/853545018762-podlozhka-otrazhayuschaya-metallizirovan",
+      "editions": [
+        {
+          "option": "",
+          "price": 1300.0
+        }
+      ]
+    },
+    {
+      "uid": "183421428392",
+      "title": "Подложка с разметкой металлизированная ПЛР 3мм 1,2 х 25м Энергоизол",
+      "price": 1280.0,
+      "sku": "",
+      "brand": "ЭНЕРГОИЗОЛ",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/183421428392-podlozhka-s-razmetkoi-metallizirovannaya",
+      "editions": [
+        {
+          "option": "",
+          "price": 1280.0
+        }
+      ]
+    },
+    {
+      "uid": "138325695802",
+      "title": "Подложка с разметкой металлизированная ПЛР 5мм 1,2 х 25м Энергоизол",
+      "price": 1320.0,
+      "sku": "",
+      "brand": "ЭНЕРГОИЗОЛ",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/138325695802-podlozhka-s-razmetkoi-metallizirovannaya",
+      "editions": [
+        {
+          "option": "",
+          "price": 1320.0
+        }
+      ]
+    },
+    {
+      "uid": "107878642852",
+      "title": "Подкладочный ковер Anderep GL ТЕХНОНИКОЛЬ (15 м2)",
+      "price": 1784.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/107878642852-podkladochnii-kover-anderep-gl-tehnoniko",
+      "editions": [
+        {
+          "option": "",
+          "price": 1784.0
+        }
+      ]
+    },
+    {
+      "uid": "550391336782",
+      "title": "Подкладочный ковер ANDEREP GL Light ТЕХНОНИКОЛЬ (15 м²)",
+      "price": 1390.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/550391336782-podkladochnii-kover-anderep-gl-light-teh",
+      "editions": [
+        {
+          "option": "",
+          "price": 1390.0
+        }
+      ]
+    },
+    {
+      "uid": "529148401682",
+      "title": "МИНИ Рулонная черепица ТЕХНОНИКОЛЬ коричневый",
+      "price": 711.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/529148401682-mini-rulonnaya-cherepitsa-tehnonikol-kor",
+      "editions": [
+        {
+          "option": "",
+          "price": 711.0
+        }
+      ]
+    },
+    {
+      "uid": "661051578072",
+      "title": "МИНИ Рулонная черепица ТЕХНОНИКОЛЬ красный",
+      "price": 711.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/661051578072-mini-rulonnaya-cherepitsa-tehnonikol-kra",
+      "editions": [
+        {
+          "option": "",
+          "price": 711.0
+        }
+      ]
+    },
+    {
+      "uid": "537126222532",
+      "title": "МИНИ Рулонная черепица ТЕХНОНИКОЛЬ зеленый",
+      "price": 711.0,
+      "sku": "",
+      "brand": "Технониколь",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/537126222532-mini-rulonnaya-cherepitsa-tehnonikol-zel",
+      "editions": [
+        {
+          "option": "",
+          "price": 711.0
+        }
+      ]
+    },
+    {
+      "uid": "190234173222",
+      "title": "МИНИ Рулонная черепица ТЕХНОНИКОЛЬ, черная (антрацит) черный",
+      "price": 711.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/190234173222-mini-rulonnaya-cherepitsa-tehnonikol-che",
+      "editions": [
+        {
+          "option": "",
+          "price": 711.0
+        }
+      ]
+    },
+    {
+      "uid": "667764778312",
+      "title": "Рулонная черепица ТЕХНОНИКОЛЬ Бобровый хвост",
+      "price": 3260.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "коричневый, красный, зелёный, серый",
+      "url": "https://aliera23.ru/catalog/tproduct/667764778312-rulonnaya-cherepitsa-tehnonikol-bobrovii",
+      "editions": [
+        {
+          "option": "",
+          "price": 3260.0
+        },
+        {
+          "option": "",
+          "price": 3260.0
+        },
+        {
+          "option": "",
+          "price": 3260.0
+        },
+        {
+          "option": "",
+          "price": 3260.0
+        }
+      ]
+    },
+    {
+      "uid": "394015495222",
+      "title": "Дюбель IZL-T для теплоизоляции c термоголовкой Tech-KREP (уп. 100 шт)",
+      "price": 1100.0,
+      "sku": "",
+      "brand": "Tech-KREP",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/394015495222-dyubel-izl-t-dlya-teploizolyatsii-c-term",
+      "editions": [
+        {
+          "option": "",
+          "price": 1100.0
+        },
+        {
+          "option": "",
+          "price": 1200.0
+        },
+        {
+          "option": "",
+          "price": 1400.0
+        },
+        {
+          "option": "",
+          "price": 1500.0
+        }
+      ]
+    },
+    {
+      "uid": "289296586582",
+      "title": "Дюбель IZM для теплоизоляции с металлическим гвоздём Tech-KREP (уп. 100 шт)",
+      "price": 800.0,
+      "sku": "",
+      "brand": "Tech-KREP",
+      "descr": "Под заказ. Продажа упаковками по 100 шт. Цена указана за упаковку.",
+      "url": "https://aliera23.ru/catalog/tproduct/289296586582-dyubel-izm-dlya-teploizolyatsii-s-metall",
+      "editions": [
+        {
+          "option": "",
+          "price": 800.0
+        },
+        {
+          "option": "",
+          "price": 900.0
+        },
+        {
+          "option": "",
+          "price": 900.0
+        },
+        {
+          "option": "",
+          "price": 1000.0
+        },
+        {
+          "option": "",
+          "price": 1100.0
+        }
+      ]
+    },
+    {
+      "uid": "498674193572",
+      "title": "Дюбель IZO для теплоизоляции с пластиковым гвоздём Tech-KREP (уп. 100 шт)",
+      "price": 600.0,
+      "sku": "",
+      "brand": "Tech-KREP",
+      "descr": "<strong>Под заказ, срок поставки 1–2 дня.</strong> Продажа упаковками по 100 шт, цена указана за упаковку.<br />Тарельчатый дюбель IZO Tech-KREP диаметром 10 мм с пластиковым гвоздём и шляпкой 60 мм. Пластиковый гвоздь не проводит холод, поэтому на фасаде не появляются мостики холода и тёмные пятна. Подходит для минеральной ваты и пенополистирола на бетоне, кирпиче и газобетоне.<br />Длины: 90, 100, 120, 140 и 160 мм. Длина дюбеля = толщина утеплителя + 50–60 мм на анкеровку в стене.<br />Уточнить срок и наличие можно по телефону +7 969 300-64-25.",
+      "url": "https://aliera23.ru/catalog/tproduct/498674193572-dyubel-izo-dlya-teploizolyatsii-s-plasti",
+      "editions": [
+        {
+          "option": "",
+          "price": 600.0
+        },
+        {
+          "option": "",
+          "price": 700.0
+        },
+        {
+          "option": "",
+          "price": 800.0
+        },
+        {
+          "option": "",
+          "price": 900.0
+        },
+        {
+          "option": "",
+          "price": 1000.0
+        }
+      ]
+    },
+    {
+      "uid": "322122431532",
+      "title": "Гидроизоляция плоской кровли ТЕХНОНИКОЛЬ",
+      "price": 2971.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 рулон / 1х8 м / 4,2 мм / 40 кг",
+      "url": "https://aliera23.ru/catalog/tproduct/322122431532-gidroizolyatsiya-ploskoi-krovli-tehnonik",
+      "editions": [
+        {
+          "option": "",
+          "price": 2971.0
+        }
+      ]
+    },
+    {
+      "uid": "179126467472",
+      "title": "Гидроизоляция пола ТЕХНОНИКОЛЬ",
+      "price": 2134.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/179126467472-gidroizolyatsiya-pola-tehnonikol",
+      "editions": [
+        {
+          "option": "",
+          "price": 2134.0
+        }
+      ]
+    },
+    {
+      "uid": "993510561182",
+      "title": "Гидроизоляция фундамента ТЕХНОНИКОЛЬ",
+      "price": 2710.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/993510561182-gidroizolyatsiya-fundamenta-tehnonikol",
+      "editions": [
+        {
+          "option": "",
+          "price": 2710.0
+        }
+      ]
+    },
+    {
+      "uid": "924243559762",
+      "title": "Отсечная гидроизоляция ТЕХНОНИКОЛЬ 200 мм",
+      "price": 671.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "1 рулон / 1х20 м /",
+      "url": "https://aliera23.ru/catalog/tproduct/924243559762-otsechnaya-gidroizolyatsiya-tehnonikol-2",
+      "editions": [
+        {
+          "option": "",
+          "price": 671.0
+        }
+      ]
+    },
+    {
+      "uid": "301630725282",
+      "title": "Отсечная гидроизоляция ТЕХНОНИКОЛЬ 400 мм",
+      "price": 1271.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/301630725282-otsechnaya-gidroizolyatsiya-tehnonikol-4",
+      "editions": [
+        {
+          "option": "",
+          "price": 1271.0
+        }
+      ]
+    },
+    {
+      "uid": "963611349012",
+      "title": "Отсечная гидроизоляция ТЕХНОНИКОЛЬ 600 мм",
+      "price": 1840.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/963611349012-otsechnaya-gidroizolyatsiya-tehnonikol-6",
+      "editions": [
+        {
+          "option": "",
+          "price": 1840.0
+        }
+      ]
+    },
+    {
+      "uid": "544599084382",
+      "title": "Ремонтная гидроизоляция 5в1 ТЕХНОНИКОЛЬ",
+      "price": 2751.0,
+      "sku": "",
+      "brand": "ТЕХНОНИКОЛЬ",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/544599084382-remontnaya-gidroizolyatsiya-5v1-tehnonik",
+      "editions": [
+        {
+          "option": "",
+          "price": 2751.0
+        }
+      ]
+    },
+    {
+      "uid": "853628313332",
+      "title": "Профиль потолочный (ПП) 60х27 3м (0,5 мм) GRAND LINE",
+      "price": 230.0,
+      "sku": "",
+      "brand": "GRAND LINE",
+      "descr": "1 шт / 3 м / 0,5 мм",
+      "url": "https://aliera23.ru/catalog/tproduct/853628313332-profil-potolochnii-pp-60h27-3m-05-mm-gra",
+      "editions": [
+        {
+          "option": "",
+          "price": 230.0
+        }
+      ]
+    },
+    {
+      "uid": "597369350602",
+      "title": "Профиль потолочный направляющий (ППН) 28х27 3м (0,5мм) GRAND LINE",
+      "price": 117.0,
+      "sku": "",
+      "brand": "GRAND LINE",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/597369350602-profil-potolochnii-napravlyayuschii-ppn",
+      "editions": [
+        {
+          "option": "",
+          "price": 117.0
+        }
+      ]
+    },
+    {
+      "uid": "821282123962",
+      "title": "Профиль стеновой направляющий (ПН-2) 50х40 3м (0,5мм) GRAND LINE",
+      "price": 265.0,
+      "sku": "",
+      "brand": "GRAND LINE",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/821282123962-profil-stenovoi-napravlyayuschii-pn-2-50",
+      "editions": [
+        {
+          "option": "",
+          "price": 265.0
+        }
+      ]
+    },
+    {
+      "uid": "546773161882",
+      "title": "Профиль стеновой стоечный (ПС-2) 50х50 3м (0,5мм) GRAND LINE",
+      "price": 330.0,
+      "sku": "",
+      "brand": "GRAND LINE",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/546773161882-profil-stenovoi-stoechnii-ps-2-50h50-3m",
+      "editions": [
+        {
+          "option": "",
+          "price": 330.0
+        }
+      ]
+    },
+    {
+      "uid": "260310620522",
+      "title": "Сетка сварная 150/150 мм 3ВР-1 (ГОСТ 23279-2012)",
+      "price": 205.0,
+      "sku": "",
+      "brand": "",
+      "descr": "",
+      "url": "https://aliera23.ru/catalog/tproduct/260310620522-setka-svarnaya-150150-mm-3vr-1-gost-2327",
+      "editions": [
+        {
+          "option": "",
+          "price": 283.0
+        },
+        {
+          "option": "",
+          "price": 556.0
+        }
+      ]
+    }
+  ]
+}
