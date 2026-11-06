@@ -24,16 +24,12 @@ jobs:
       - name: Fetch prices from Tilda
         run: python fetch_prices.py
 
-      - name: Check for changes
-        id: check
-        run: |
-          git diff --quiet prices.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
-
       - name: Commit & push if changed
-        if: steps.check.outputs.changed == 'true'
         run: |
-          git config user.name "AlieraBot"
-          git config user.email "bot@aliera23.ru"
           git add prices.json
-          git commit -m "🔄 Обновление цен $(date +'%Y-%m-%d %H:%M') МСК"
-          git push
+          git diff --cached --quiet && echo "No changes" || {
+            git config user.name "AlieraBot"
+            git config user.email "bot@aliera23.ru"
+            git commit -m "🔄 Обновление цен $(date +'%Y-%m-%d %H:%M')"
+            git push
+          }
