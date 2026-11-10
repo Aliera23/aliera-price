@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 """
 АЛИЕРА Price Monitor
@@ -10,6 +11,7 @@ API: https://store.tildacdn.com/api/getproductslist/?storepartuid={UID}&slice={N
 import json
 import sys
 import os
+import time
 from datetime import datetime, timezone, timedelta
 from urllib.request import urlopen, Request
 from urllib.error import URLError, HTTPError
@@ -20,6 +22,12 @@ API_BASE = "https://store.tildacdn.com/api/getproductslist/"
 PAGE_SIZE = 50
 
 OUTPUT_FILE = os.environ.get("OUTPUT_FILE", "prices.json")
+
+# Служебные поля варианта товара — всё остальное считается названием опции
+EDITION_SERVICE_KEYS = {
+    "uid", "price", "priceold", "sku", "quantity", "img", "externalid",
+    "text", "title", "descr", "url", "gallery", "unit", "portion", "single", "mark",
+}
 
 
 def fetch_all_products() -> list:
@@ -36,16 +44,20 @@ def fetch_all_products() -> list:
             "Accept": "application/json",
         })
 
-        try:
-            with urlopen(req, timeout=30) as resp:
-                raw = resp.read().decode("utf-8")
-                data = json.loads(raw, strict=False)
-        except (URLError, HTTPError) as e:
-            print(f"  ❌ Ошибка: {e}")
-            break
-        except json.JSONDecodeError as e:
-            print(f"  ❌ Ошибка JSON: {e}")
-            break
+        data = None
+        for attempt in range(1, 4):
+            try:
+                with urlopen(req, timeout=30) as resp:
+                    raw = resp.read().decode("utf-8")
+                    data = json.loads(raw, strict=False)
+                break
+            except (URLError, HTTPError, json.JSONDecodeError, TimeoutError) as e:
+                print(f"  ⚠️  Попытка {attempt}/3 не удалась: {e}")
+                time.sleep(5 * attempt)
+
+        if data is None:
+            # Не продолжаем: неполный каталог хуже, чем вчерашний prices.json
+            raise RuntimeError(f"Не удалось загрузить страницу {page} каталога")
 
         products = data.get("products", [])
         if not products:
@@ -114,17 +126,32 @@ def parse_product(raw: dict) -> dict | None:
         if parsed_chars:
             product["characteristics"] = parsed_chars
 
-    # Вариации (editions) — если есть разные цены по размерам
+    # Варианты (editions): у Tilda название опции — это отдельный ключ варианта,
+    # например {"price": "800.0000", "Размер": "10х120"}. Собираем все такие ключи.
     editions = raw.get("editions") or []
     if editions:
         parsed_eds = []
         for ed in editions:
             ed_price = parse_price(ed.get("price"))
-            if ed_price > 0:
-                parsed_eds.append({
-                    "option": (ed.get("option") or "").strip(),
-                    "price": ed_price,
-                })
+            if ed_price <= 0:
+                continue
+
+            options = {
+                str(k): str(v).strip()
+                for k, v in ed.items()
+                if k not in EDITION_SERVICE_KEYS
+                and not str(k).startswith("pack_")
+                and v not in (None, "")
+                and not isinstance(v, (dict, list))
+            }
+
+            parsed_eds.append({
+                "uid": str(ed.get("uid", "")),
+                "option": " / ".join(options.values()),
+                "options": options,
+                "price": ed_price,
+            })
+
         if parsed_eds:
             product["editions"] = parsed_eds
 
@@ -140,22 +167,33 @@ def main():
     print(f"📅 {now.strftime('%Y-%m-%d %H:%M:%S')} МСК")
     print("=" * 50)
 
-    raw_products = fetch_all_products()
+    try:
+        raw_products = fetch_all_products()
+    except RuntimeError as e:
+        print(f"❌ {e}. Файл не обновлён.")
+        return 1
+
     print(f"\n📊 Всего загружено: {len(raw_products)} товаров")
 
-    # Парсим только товары с ценой
+    # Парсим только товары с ценой; uid товаров без цены сохраняем отдельно,
+    # чтобы калькулятор показывал у них «цена по запросу», а не старую цену
     products = []
+    no_price_uids = []
     skipped = 0
+
     for raw in raw_products:
         parsed = parse_product(raw)
         if parsed:
             products.append(parsed)
         else:
             skipped += 1
+            if raw.get("uid"):
+                no_price_uids.append(str(raw.get("uid")))
 
     # Убираем дубликаты по uid
     seen = set()
     unique = []
+
     for p in products:
         if p["uid"] not in seen:
             seen.add(p["uid"])
@@ -169,8 +207,21 @@ def main():
         "total_in_catalog": len(raw_products),
         "total_with_price": len(unique),
         "total_no_price": skipped,
+        "no_price_uids": sorted(set(no_price_uids) - seen),
         "products": unique,
     }
+
+    # Защита: если товаров с ценой стало резко меньше, чем в прошлый раз —
+    # скорее всего, сбой на стороне Tilda. Старый файл не трогаем.
+    try:
+        with open(OUTPUT_FILE, encoding="utf-8") as f:
+            prev_count = len(json.load(f).get("products", []))
+    except (OSError, ValueError):
+        prev_count = 0
+
+    if not unique or len(unique) < prev_count * 0.6:
+        print(f"❌ Получено {len(unique)} товаров с ценой, в прошлый раз было {prev_count}. Файл не обновлён.")
+        return 1
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
