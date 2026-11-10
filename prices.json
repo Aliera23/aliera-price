@@ -1,11 +1,112 @@
 {
-  "updated_at": "2026-11-09 13:57:36",
+  "updated_at": "2026-11-10 08:57:53",
   "timezone": "Europe/Moscow",
   "currency": "RUB",
   "source": "https://aliera23.ru/catalog",
   "total_in_catalog": 195,
   "total_with_price": 96,
   "total_no_price": 99,
+  "no_price_uids": [
+    "100812182982",
+    "116312708092",
+    "124278611942",
+    "125200979572",
+    "148144539172",
+    "158087934092",
+    "158214863302",
+    "177833876712",
+    "180825153462",
+    "186786540812",
+    "187375499172",
+    "195103482042",
+    "204236140672",
+    "219254341292",
+    "243046353932",
+    "248660662392",
+    "256189223502",
+    "276056855502",
+    "284899663882",
+    "291717497642",
+    "307065986512",
+    "311433374352",
+    "321220340992",
+    "324705936112",
+    "327662775162",
+    "331701774012",
+    "343848812092",
+    "362217777432",
+    "379849279522",
+    "396602123122",
+    "421628504802",
+    "470200217612",
+    "480505463252",
+    "482324994312",
+    "483694162252",
+    "489953090152",
+    "513279313252",
+    "543767311382",
+    "553269895242",
+    "561717141332",
+    "568503599862",
+    "568581185602",
+    "575706325142",
+    "576235308282",
+    "588772285162",
+    "601493011102",
+    "607840804442",
+    "607938650312",
+    "620715915502",
+    "623328570102",
+    "625943392762",
+    "626624519982",
+    "626931667962",
+    "642696761372",
+    "666976177862",
+    "674939721362",
+    "691320661652",
+    "703118276742",
+    "703930803252",
+    "715376163042",
+    "719077939362",
+    "720347743132",
+    "721274914532",
+    "722651889942",
+    "726358615482",
+    "727794452922",
+    "751252092502",
+    "772200277472",
+    "789735642732",
+    "799561464052",
+    "815598064702",
+    "819196901712",
+    "829445826272",
+    "834577752682",
+    "853511670932",
+    "856498084792",
+    "859135900862",
+    "864137960432",
+    "874373908582",
+    "890287600102",
+    "893095374062",
+    "899238656612",
+    "904984252592",
+    "907085934712",
+    "911191657972",
+    "919139324392",
+    "920555269312",
+    "940441189942",
+    "943710252472",
+    "959072811912",
+    "961375201412",
+    "961811193112",
+    "964222922232",
+    "967316645072",
+    "971872297572",
+    "978013680792",
+    "978312588242",
+    "981631369652",
+    "988186132682"
+  ],
   "products": [
     {
       "uid": "176679260422",
@@ -17,7 +118,9 @@
       "url": "https://aliera23.ru/xps/tproduct/176679260422-penopleks-komfort-50-mm",
       "editions": [
         {
+          "uid": "176679260422",
           "option": "",
+          "options": {},
           "price": 2156.0
         }
       ]
@@ -36,7 +139,9 @@
       },
       "editions": [
         {
+          "uid": "910596344552",
           "option": "",
+          "options": {},
           "price": 2380.0
         }
       ]
@@ -55,7 +160,9 @@
       },
       "editions": [
         {
+          "uid": "334745989572",
           "option": "",
+          "options": {},
           "price": 2195.0
         }
       ]
@@ -74,7 +181,9 @@
       },
       "editions": [
         {
+          "uid": "180430850512",
           "option": "",
+          "options": {},
           "price": 2500.0
         }
       ]
@@ -93,7 +202,9 @@
       },
       "editions": [
         {
+          "uid": "971014808922",
           "option": "",
+          "options": {},
           "price": 2240.0
         }
       ]
@@ -112,7 +223,9 @@
       },
       "editions": [
         {
+          "uid": "607374508082",
           "option": "",
+          "options": {},
           "price": 2492.0
         }
       ]
@@ -131,7 +244,9 @@
       },
       "editions": [
         {
+          "uid": "662683753542",
           "option": "",
+          "options": {},
           "price": 2240.0
         }
       ]
@@ -147,7 +262,9 @@
       "old_price": 960.0,
       "editions": [
         {
+          "uid": "672770943842",
           "option": "",
+          "options": {},
           "price": 740.0
         }
       ]
@@ -166,7 +283,9 @@
       },
       "editions": [
         {
+          "uid": "739123648062",
           "option": "",
+          "options": {},
           "price": 740.0
         }
       ]
@@ -185,7 +304,9 @@
       },
       "editions": [
         {
+          "uid": "986998460562",
           "option": "",
+          "options": {},
           "price": 1300.0
         }
       ]
@@ -204,7 +325,9 @@
       },
       "editions": [
         {
+          "uid": "699113186882",
           "option": "",
+          "options": {},
           "price": 940.0
         }
       ]
@@ -223,7 +346,9 @@
       },
       "editions": [
         {
+          "uid": "319183584712",
           "option": "",
+          "options": {},
           "price": 1350.0
         }
       ]
@@ -242,7 +367,9 @@
       },
       "editions": [
         {
+          "uid": "331089738182",
           "option": "",
+          "options": {},
           "price": 1350.0
         }
       ]
@@ -261,7 +388,9 @@
       },
       "editions": [
         {
+          "uid": "869034654742",
           "option": "",
+          "options": {},
           "price": 3040.0
         }
       ]
@@ -280,7 +409,9 @@
       },
       "editions": [
         {
+          "uid": "741240855212",
           "option": "",
+          "options": {},
           "price": 1100.0
         }
       ]
@@ -299,7 +430,9 @@
       },
       "editions": [
         {
+          "uid": "835361767402",
           "option": "",
+          "options": {},
           "price": 1370.0
         }
       ]
@@ -319,7 +452,9 @@
       },
       "editions": [
         {
+          "uid": "321567342232",
           "option": "",
+          "options": {},
           "price": 1450.0
         }
       ]
@@ -334,7 +469,9 @@
       "url": "https://aliera23.ru/minvata/tproduct/304670057832-uteplitel-tehnonikol-roklait-100-mm",
       "editions": [
         {
+          "uid": "304670057832",
           "option": "",
+          "options": {},
           "price": 990.0
         }
       ]
@@ -353,7 +490,9 @@
       },
       "editions": [
         {
+          "uid": "417408372922",
           "option": "",
+          "options": {},
           "price": 1450.0
         }
       ]
@@ -372,7 +511,9 @@
       },
       "editions": [
         {
+          "uid": "454726828602",
           "option": "",
+          "options": {},
           "price": 2100.0
         }
       ]
@@ -388,7 +529,9 @@
       "old_price": 2490.0,
       "editions": [
         {
+          "uid": "389574462652",
           "option": "",
+          "options": {},
           "price": 2100.0
         }
       ]
@@ -407,7 +550,9 @@
       },
       "editions": [
         {
+          "uid": "165770052222",
           "option": "",
+          "options": {},
           "price": 1100.0
         }
       ]
@@ -426,7 +571,9 @@
       },
       "editions": [
         {
+          "uid": "401738533582",
           "option": "",
+          "options": {},
           "price": 910.0
         }
       ]
@@ -445,7 +592,9 @@
       },
       "editions": [
         {
+          "uid": "645160376522",
           "option": "",
+          "options": {},
           "price": 910.0
         }
       ]
@@ -461,7 +610,9 @@
       "old_price": 2280.0,
       "editions": [
         {
+          "uid": "446821933042",
           "option": "",
+          "options": {},
           "price": 2060.0
         }
       ]
@@ -481,7 +632,9 @@
       },
       "editions": [
         {
+          "uid": "529604153042",
           "option": "",
+          "options": {},
           "price": 2070.0
         }
       ]
@@ -501,7 +654,9 @@
       },
       "editions": [
         {
+          "uid": "640401100982",
           "option": "",
+          "options": {},
           "price": 2400.0
         }
       ]
@@ -521,7 +676,9 @@
       },
       "editions": [
         {
+          "uid": "338428739902",
           "option": "",
+          "options": {},
           "price": 2280.0
         }
       ]
@@ -541,7 +698,9 @@
       },
       "editions": [
         {
+          "uid": "351139693692",
           "option": "",
+          "options": {},
           "price": 2170.0
         }
       ]
@@ -561,7 +720,9 @@
       },
       "editions": [
         {
+          "uid": "403704863262",
           "option": "",
+          "options": {},
           "price": 2380.0
         }
       ]
@@ -581,7 +742,9 @@
       },
       "editions": [
         {
+          "uid": "472492763772",
           "option": "",
+          "options": {},
           "price": 2160.0
         }
       ]
@@ -596,7 +759,9 @@
       "url": "https://aliera23.ru/gkl/tproduct/375776094822-gipsokarton-habez-gklv-95-mm-1200h2500-m",
       "editions": [
         {
+          "uid": "375776094822",
           "option": "",
+          "options": {},
           "price": 446.0
         }
       ]
@@ -611,7 +776,9 @@
       "url": "https://aliera23.ru/gkl/tproduct/917550773822-gipsokarton-habez-gkl-95-mm-1200h2500-mm",
       "editions": [
         {
+          "uid": "917550773822",
           "option": "",
+          "options": {},
           "price": 353.0
         }
       ]
@@ -626,7 +793,9 @@
       "url": "https://aliera23.ru/gkl/tproduct/427081924722-gipsokarton-habez-gklv-125-mm-1200h2500",
       "editions": [
         {
+          "uid": "427081924722",
           "option": "",
+          "options": {},
           "price": 485.0
         }
       ]
@@ -641,7 +810,9 @@
       "url": "https://aliera23.ru/gkl/tproduct/617502333502-gipsokarton-habez-gkl-125-mm-1200h2500-m",
       "editions": [
         {
+          "uid": "617502333502",
           "option": "",
+          "options": {},
           "price": 406.0
         }
       ]
@@ -656,7 +827,9 @@
       "url": "https://aliera23.ru/osb/tproduct/448715123552-plita-osb-vlagostoikaya-ultraply-9244012",
       "editions": [
         {
+          "uid": "448715123552",
           "option": "",
+          "options": {},
           "price": 670.0
         }
       ]
@@ -671,7 +844,9 @@
       "url": "https://aliera23.ru/osb/tproduct/722651836992-plita-osb-vlagostoikaya-ultraply-1224401",
       "editions": [
         {
+          "uid": "722651836992",
           "option": "",
+          "options": {},
           "price": 850.0
         }
       ]
@@ -686,7 +861,9 @@
       "url": "https://aliera23.ru/osb/tproduct/904651975232-plita-osb-vlagostoikaya-ultraply-1524401",
       "editions": [
         {
+          "uid": "904651975232",
           "option": "",
+          "options": {},
           "price": 1050.0
         }
       ]
@@ -701,7 +878,9 @@
       "url": "https://aliera23.ru/osb/tproduct/866584489772-plita-osb-vlagostoikaya-ultraply-2224401",
       "editions": [
         {
+          "uid": "866584489772",
           "option": "",
+          "options": {},
           "price": 1650.0
         }
       ]
@@ -716,7 +895,9 @@
       "url": "https://aliera23.ru/osb/tproduct/833592709852-plita-osb-vlagostoikaya-ultraply-1824401",
       "editions": [
         {
+          "uid": "833592709852",
           "option": "",
+          "options": {},
           "price": 1300.0
         }
       ]
@@ -731,7 +912,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/270701340782-klei-pena-penopleks-fastfix-pro",
       "editions": [
         {
+          "uid": "270701340782",
           "option": "",
+          "options": {},
           "price": 600.0
         }
       ]
@@ -746,7 +929,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/324531442952-klei-pena-tehnonikol-professional-dlya-p",
       "editions": [
         {
+          "uid": "324531442952",
           "option": "",
+          "options": {},
           "price": 600.0
         }
       ]
@@ -764,7 +949,9 @@
       },
       "editions": [
         {
+          "uid": "658123467892",
           "option": "",
+          "options": {},
           "price": 4715.0
         }
       ]
@@ -782,7 +969,9 @@
       },
       "editions": [
         {
+          "uid": "468652893332",
           "option": "",
+          "options": {},
           "price": 4860.0
         }
       ]
@@ -800,7 +989,9 @@
       },
       "editions": [
         {
+          "uid": "287297998372",
           "option": "",
+          "options": {},
           "price": 4250.0
         }
       ]
@@ -815,7 +1006,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/784637503182-paroizolyatsiya-tehnonikol-isobox-b",
       "editions": [
         {
+          "uid": "784637503182",
           "option": "",
+          "options": {},
           "price": 1800.0
         }
       ]
@@ -830,7 +1023,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/411978035012-vetro-vlagozaschitnaya-plenka-tehnonikol",
       "editions": [
         {
+          "uid": "411978035012",
           "option": "",
+          "options": {},
           "price": 2660.0
         }
       ]
@@ -845,7 +1040,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/210956299332-paroizolyatsiya-tehnonikol-isobox-d",
       "editions": [
         {
+          "uid": "210956299332",
           "option": "",
+          "options": {},
           "price": 2200.0
         }
       ]
@@ -860,7 +1057,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/141042760612-dyubel-fasadnii-termoclip-stena-1mt-180",
       "editions": [
         {
+          "uid": "141042760612",
           "option": "",
+          "options": {},
           "price": 1500.0
         }
       ]
@@ -875,7 +1074,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/664599907292-dyubel-fasadnii-termoclip-stena-1mt-160",
       "editions": [
         {
+          "uid": "664599907292",
           "option": "",
+          "options": {},
           "price": 1400.0
         }
       ]
@@ -890,7 +1091,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/190322810092-dyubel-fasadnii-termoclip-stena-1mt-140",
       "editions": [
         {
+          "uid": "190322810092",
           "option": "",
+          "options": {},
           "price": 1300.0
         }
       ]
@@ -905,7 +1108,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/185157997512-dyubel-fasadnii-termoclip-stena-1mt-100",
       "editions": [
         {
+          "uid": "185157997512",
           "option": "",
+          "options": {},
           "price": 1100.0
         }
       ]
@@ -920,7 +1125,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/103235771412-dyubel-fasadnii-termoclip-stena-1mt-120",
       "editions": [
         {
+          "uid": "103235771412",
           "option": "",
+          "options": {},
           "price": 1200.0
         }
       ]
@@ -935,7 +1142,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/105496072132-klei-suhov-teplofasad-dlya-teploizolyats",
       "editions": [
         {
+          "uid": "105496072132",
           "option": "",
+          "options": {},
           "price": 465.0
         }
       ]
@@ -950,7 +1159,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/907058594912-geotekstil-tehnonikol-geo-150-75m2-1550m",
       "editions": [
         {
+          "uid": "907058594912",
           "option": "",
+          "options": {},
           "price": 2818.0
         }
       ]
@@ -965,7 +1176,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/110391541132-geotekstil-tehnonikol-geo-300-45m2-1530m",
       "editions": [
         {
+          "uid": "110391541132",
           "option": "",
+          "options": {},
           "price": 3019.0
         }
       ]
@@ -980,7 +1193,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/738772054702-podkladochnii-kover-tehnonikol-alfa-ande",
       "editions": [
         {
+          "uid": "738772054702",
           "option": "",
+          "options": {},
           "price": 4018.0
         }
       ]
@@ -995,7 +1210,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/113995237132-podkladochnii-kover-anderep-next-fix-teh",
       "editions": [
         {
+          "uid": "113995237132",
           "option": "",
+          "options": {},
           "price": 4502.0
         }
       ]
@@ -1010,7 +1227,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/180574652072-podkladochnii-kover-anderep-next-self-25",
       "editions": [
         {
+          "uid": "180574652072",
           "option": "",
+          "options": {},
           "price": 5010.0
         }
       ]
@@ -1025,7 +1244,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/660253422482-podkladochnii-kover-anderep-prof-500-40m",
       "editions": [
         {
+          "uid": "660253422482",
           "option": "",
+          "options": {},
           "price": 6036.0
         }
       ]
@@ -1040,19 +1261,35 @@
       "url": "https://aliera23.ru/catalog/tproduct/636531382092-tssp-tamak-12502700-mm-tolschinoi-8-10-1",
       "editions": [
         {
-          "option": "",
+          "uid": "742930731862",
+          "option": "8*1250*2700",
+          "options": {
+            "Размер": "8*1250*2700"
+          },
           "price": 2237.0
         },
         {
-          "option": "",
+          "uid": "115496905262",
+          "option": "20*1250*2700",
+          "options": {
+            "Размер": "20*1250*2700"
+          },
           "price": 4111.0
         },
         {
-          "option": "",
+          "uid": "483273660492",
+          "option": "12*1250*2700",
+          "options": {
+            "Размер": "12*1250*2700"
+          },
           "price": 2788.0
         },
         {
-          "option": "",
+          "uid": "191269904122",
+          "option": "10*1250*2700",
+          "options": {
+            "Размер": "10*1250*2700"
+          },
           "price": 2545.0
         }
       ]
@@ -1067,19 +1304,35 @@
       "url": "https://aliera23.ru/catalog/tproduct/660665243552-tssp-tamak-12503200-mm-tolschinoi-10-12",
       "editions": [
         {
-          "option": "",
+          "uid": "266885059432",
+          "option": "10*1250*3200",
+          "options": {
+            "Размер": "10*1250*3200"
+          },
           "price": 2620.0
         },
         {
-          "option": "",
+          "uid": "305618274982",
+          "option": "12*1250*3200",
+          "options": {
+            "Размер": "12*1250*3200"
+          },
           "price": 2788.0
         },
         {
-          "option": "",
+          "uid": "997059383442",
+          "option": "16*1250*3200",
+          "options": {
+            "Размер": "16*1250*3200"
+          },
           "price": 3455.0
         },
         {
-          "option": "",
+          "uid": "278641320392",
+          "option": "20*1250*3200",
+          "options": {
+            "Размер": "20*1250*3200"
+          },
           "price": 3960.0
         }
       ]
@@ -1094,7 +1347,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/691291509822-gidro-paroizolyatsionnaya-plenka-univers",
       "editions": [
         {
+          "uid": "691291509822",
           "option": "",
+          "options": {},
           "price": 1420.0
         }
       ]
@@ -1109,7 +1364,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/909941921592-paroizolyatsionnaya-plenka-b-kolotek-70",
       "editions": [
         {
+          "uid": "909941921592",
           "option": "",
+          "options": {},
           "price": 960.0
         }
       ]
@@ -1124,7 +1381,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/261081995032-setka-steklotkanevaya-fasadnaya-polinet",
       "editions": [
         {
+          "uid": "261081995032",
           "option": "",
+          "options": {},
           "price": 1724.0
         }
       ]
@@ -1139,7 +1398,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/873147241662-setka-steklotkanevaya-fasadnaya-polinet",
       "editions": [
         {
+          "uid": "873147241662",
           "option": "",
+          "options": {},
           "price": 2463.0
         }
       ]
@@ -1154,7 +1415,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/537666672262-setka-bazaltovaya-kladochnaya-fasadpro-2",
       "editions": [
         {
+          "uid": "537666672262",
           "option": "",
+          "options": {},
           "price": 900.0
         }
       ]
@@ -1169,7 +1432,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/543488888522-setka-fasadnaya-x-glass-pro-5h5-160-grm2",
       "editions": [
         {
+          "uid": "543488888522",
           "option": "",
+          "options": {},
           "price": 2300.0
         }
       ]
@@ -1184,7 +1449,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/345537466432-setka-steklotkanevaya-fasadnaya-yach-5h5",
       "editions": [
         {
+          "uid": "345537466432",
           "option": "",
+          "options": {},
           "price": 1490.0
         }
       ]
@@ -1199,7 +1466,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/386100169762-setka-steklotkanevaya-fasadnaya-yach-5h5",
       "editions": [
         {
+          "uid": "386100169762",
           "option": "",
+          "options": {},
           "price": 1280.0
         }
       ]
@@ -1214,7 +1483,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/111499513852-truba-pvh-16h20-mm-valtec-pex-200-m",
       "editions": [
         {
+          "uid": "111499513852",
           "option": "",
+          "options": {},
           "price": 65.0
         }
       ]
@@ -1229,7 +1500,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/853545018762-podlozhka-otrazhayuschaya-metallizirovan",
       "editions": [
         {
+          "uid": "853545018762",
           "option": "",
+          "options": {},
           "price": 1300.0
         }
       ]
@@ -1244,7 +1517,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/183421428392-podlozhka-s-razmetkoi-metallizirovannaya",
       "editions": [
         {
+          "uid": "183421428392",
           "option": "",
+          "options": {},
           "price": 1280.0
         }
       ]
@@ -1259,7 +1534,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/138325695802-podlozhka-s-razmetkoi-metallizirovannaya",
       "editions": [
         {
+          "uid": "138325695802",
           "option": "",
+          "options": {},
           "price": 1320.0
         }
       ]
@@ -1274,7 +1551,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/107878642852-podkladochnii-kover-anderep-gl-tehnoniko",
       "editions": [
         {
+          "uid": "107878642852",
           "option": "",
+          "options": {},
           "price": 1784.0
         }
       ]
@@ -1289,7 +1568,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/550391336782-podkladochnii-kover-anderep-gl-light-teh",
       "editions": [
         {
+          "uid": "550391336782",
           "option": "",
+          "options": {},
           "price": 1390.0
         }
       ]
@@ -1304,7 +1585,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/529148401682-mini-rulonnaya-cherepitsa-tehnonikol-kor",
       "editions": [
         {
+          "uid": "529148401682",
           "option": "",
+          "options": {},
           "price": 711.0
         }
       ]
@@ -1319,7 +1602,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/661051578072-mini-rulonnaya-cherepitsa-tehnonikol-kra",
       "editions": [
         {
+          "uid": "661051578072",
           "option": "",
+          "options": {},
           "price": 711.0
         }
       ]
@@ -1334,7 +1619,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/537126222532-mini-rulonnaya-cherepitsa-tehnonikol-zel",
       "editions": [
         {
+          "uid": "537126222532",
           "option": "",
+          "options": {},
           "price": 711.0
         }
       ]
@@ -1349,7 +1636,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/190234173222-mini-rulonnaya-cherepitsa-tehnonikol-che",
       "editions": [
         {
+          "uid": "190234173222",
           "option": "",
+          "options": {},
           "price": 711.0
         }
       ]
@@ -1364,19 +1653,35 @@
       "url": "https://aliera23.ru/catalog/tproduct/667764778312-rulonnaya-cherepitsa-tehnonikol-bobrovii",
       "editions": [
         {
-          "option": "",
+          "uid": "390869763742",
+          "option": "Коричневый",
+          "options": {
+            "Цвет": "Коричневый"
+          },
           "price": 3260.0
         },
         {
-          "option": "",
+          "uid": "223667455952",
+          "option": "Красный",
+          "options": {
+            "Цвет": "Красный"
+          },
           "price": 3260.0
         },
         {
-          "option": "",
+          "uid": "615397479712",
+          "option": "Серый",
+          "options": {
+            "Цвет": "Серый"
+          },
           "price": 3260.0
         },
         {
-          "option": "",
+          "uid": "574755330652",
+          "option": "Зеленый",
+          "options": {
+            "Цвет": "Зеленый"
+          },
           "price": 3260.0
         }
       ]
@@ -1391,19 +1696,35 @@
       "url": "https://aliera23.ru/catalog/tproduct/394015495222-dyubel-izl-t-dlya-teploizolyatsii-c-term",
       "editions": [
         {
-          "option": "",
+          "uid": "485924571482",
+          "option": "10х100 (уп. 100 шт.)",
+          "options": {
+            "Размер": "10х100 (уп. 100 шт.)"
+          },
           "price": 1100.0
         },
         {
-          "option": "",
+          "uid": "568946793952",
+          "option": "10х120 (уп. 100 шт.)",
+          "options": {
+            "Размер": "10х120 (уп. 100 шт.)"
+          },
           "price": 1200.0
         },
         {
-          "option": "",
+          "uid": "473759287602",
+          "option": "10х160 (уп. 100 шт.)",
+          "options": {
+            "Размер": "10х160 (уп. 100 шт.)"
+          },
           "price": 1400.0
         },
         {
-          "option": "",
+          "uid": "478533973492",
+          "option": "10х180 (уп. 100 шт.)",
+          "options": {
+            "Размер": "10х180 (уп. 100 шт.)"
+          },
           "price": 1500.0
         }
       ]
@@ -1418,23 +1739,43 @@
       "url": "https://aliera23.ru/catalog/tproduct/289296586582-dyubel-izm-dlya-teploizolyatsii-s-metall",
       "editions": [
         {
-          "option": "",
+          "uid": "202123497622",
+          "option": "10х90 (уп. 100 шт.)",
+          "options": {
+            "Размер": "10х90 (уп. 100 шт.)"
+          },
           "price": 800.0
         },
         {
-          "option": "",
+          "uid": "607597346062",
+          "option": "10х100 (уп. 100 шт.)",
+          "options": {
+            "Размер": "10х100 (уп. 100 шт.)"
+          },
           "price": 900.0
         },
         {
-          "option": "",
+          "uid": "798968678012",
+          "option": "10х120 (уп. 100 шт.)",
+          "options": {
+            "Размер": "10х120 (уп. 100 шт.)"
+          },
           "price": 900.0
         },
         {
-          "option": "",
+          "uid": "786179902912",
+          "option": "10х140 (уп. 100 шт.)",
+          "options": {
+            "Размер": "10х140 (уп. 100 шт.)"
+          },
           "price": 1000.0
         },
         {
-          "option": "",
+          "uid": "766915857252",
+          "option": "10х160 (уп. 100 шт.)",
+          "options": {
+            "Размер": "10х160 (уп. 100 шт.)"
+          },
           "price": 1100.0
         }
       ]
@@ -1449,23 +1790,43 @@
       "url": "https://aliera23.ru/catalog/tproduct/498674193572-dyubel-izo-dlya-teploizolyatsii-s-plasti",
       "editions": [
         {
-          "option": "",
+          "uid": "838068812402",
+          "option": "10х90 (уп. 100 шт)",
+          "options": {
+            "Размер": "10х90 (уп. 100 шт)"
+          },
           "price": 600.0
         },
         {
-          "option": "",
+          "uid": "288502003912",
+          "option": "10х100 (уп. 100 шт)",
+          "options": {
+            "Размер": "10х100 (уп. 100 шт)"
+          },
           "price": 700.0
         },
         {
-          "option": "",
+          "uid": "375144385872",
+          "option": "10х120 (уп. 100 шт)",
+          "options": {
+            "Размер": "10х120 (уп. 100 шт)"
+          },
           "price": 800.0
         },
         {
-          "option": "",
+          "uid": "284842132072",
+          "option": "10х140 (уп. 100 шт)",
+          "options": {
+            "Размер": "10х140 (уп. 100 шт)"
+          },
           "price": 900.0
         },
         {
-          "option": "",
+          "uid": "229490251232",
+          "option": "10х160 (уп. 100 шт)",
+          "options": {
+            "Размер": "10х160 (уп. 100 шт)"
+          },
           "price": 1000.0
         }
       ]
@@ -1480,7 +1841,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/322122431532-gidroizolyatsiya-ploskoi-krovli-tehnonik",
       "editions": [
         {
+          "uid": "322122431532",
           "option": "",
+          "options": {},
           "price": 2971.0
         }
       ]
@@ -1495,7 +1858,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/179126467472-gidroizolyatsiya-pola-tehnonikol",
       "editions": [
         {
+          "uid": "179126467472",
           "option": "",
+          "options": {},
           "price": 2134.0
         }
       ]
@@ -1510,7 +1875,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/993510561182-gidroizolyatsiya-fundamenta-tehnonikol",
       "editions": [
         {
+          "uid": "993510561182",
           "option": "",
+          "options": {},
           "price": 2710.0
         }
       ]
@@ -1525,7 +1892,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/924243559762-otsechnaya-gidroizolyatsiya-tehnonikol-2",
       "editions": [
         {
+          "uid": "924243559762",
           "option": "",
+          "options": {},
           "price": 671.0
         }
       ]
@@ -1540,7 +1909,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/301630725282-otsechnaya-gidroizolyatsiya-tehnonikol-4",
       "editions": [
         {
+          "uid": "301630725282",
           "option": "",
+          "options": {},
           "price": 1271.0
         }
       ]
@@ -1555,7 +1926,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/963611349012-otsechnaya-gidroizolyatsiya-tehnonikol-6",
       "editions": [
         {
+          "uid": "963611349012",
           "option": "",
+          "options": {},
           "price": 1840.0
         }
       ]
@@ -1570,7 +1943,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/544599084382-remontnaya-gidroizolyatsiya-5v1-tehnonik",
       "editions": [
         {
+          "uid": "544599084382",
           "option": "",
+          "options": {},
           "price": 2751.0
         }
       ]
@@ -1585,7 +1960,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/853628313332-profil-potolochnii-pp-60h27-3m-05-mm-gra",
       "editions": [
         {
+          "uid": "853628313332",
           "option": "",
+          "options": {},
           "price": 230.0
         }
       ]
@@ -1600,7 +1977,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/597369350602-profil-potolochnii-napravlyayuschii-ppn",
       "editions": [
         {
+          "uid": "597369350602",
           "option": "",
+          "options": {},
           "price": 117.0
         }
       ]
@@ -1615,7 +1994,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/821282123962-profil-stenovoi-napravlyayuschii-pn-2-50",
       "editions": [
         {
+          "uid": "821282123962",
           "option": "",
+          "options": {},
           "price": 265.0
         }
       ]
@@ -1630,7 +2011,9 @@
       "url": "https://aliera23.ru/catalog/tproduct/546773161882-profil-stenovoi-stoechnii-ps-2-50h50-3m",
       "editions": [
         {
+          "uid": "546773161882",
           "option": "",
+          "options": {},
           "price": 330.0
         }
       ]
@@ -1645,11 +2028,19 @@
       "url": "https://aliera23.ru/catalog/tproduct/260310620522-setka-svarnaya-150150-mm-3vr-1-gost-2327",
       "editions": [
         {
-          "option": "",
+          "uid": "746352419552",
+          "option": "150/150 1000*3000 3ВР-1",
+          "options": {
+            "Размер": "150/150 1000*3000 3ВР-1"
+          },
           "price": 283.0
         },
         {
-          "option": "",
+          "uid": "819729903092",
+          "option": "150/150 2000*3000 3ВР-1",
+          "options": {
+            "Размер": "150/150 2000*3000 3ВР-1"
+          },
           "price": 556.0
         }
       ]
